@@ -1,4 +1,4 @@
-.. Papyrus Docs documentation master file, created by
+.. Papyrus Network documentation master file, created by
    sphinx-quickstart on Mon Nov 27 18:19:33 2017.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
