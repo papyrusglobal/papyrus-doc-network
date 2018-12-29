@@ -13,13 +13,7 @@ Papyrus is the world’s first fully comprehensive and highly scalable decentral
    :maxdepth: 2
    :caption: Contents:
 
-   doc/overview
-   doc/tech_overview
-   doc/scanner
-   doc/ssp
-   doc/dsp
-   doc/auditor
-   doc/other
+   doc/network_memo
 
 
 Indices and tables
