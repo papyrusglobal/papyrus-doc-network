@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Papyrus integration documentation!
+Welcome to Papyrus Network documentation!
 =============================================
 
-Papyrus is the world’s first fully comprehensive and highly scalable decentralized ecosystem for digital advertising which radically improves programmatic advertising stack to provide efficient, transparent and mutually beneficial environment for users, publishers, advertisers and decentralized application (dApp) developers using blockchain architecture.
+Papyrus network is a public blockchain for developers designed for mass adoption and enterprise usage. This is the first Ethereum-based scalable universal blockchain network with various smart contracts capabilities which can be successfully used in all industries, especially in data centric applications. Papyrus Network utilizes Proof of Authority (PoA) as its consensus mechanism. We provide the flexibility to code in Ethereum standards with the added benefits of Papyrus Network solutions to scalability and interoperability in blockchain networks.
 
 
 .. toctree::
