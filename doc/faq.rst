@@ -23,7 +23,7 @@ What differs Papyrus Network from Ethereum, EOS and TRON?
 Papyrus Network combines the best features of Ethereum and EOS avoiding their weaknesses and having something different inside:
 
 * *Consensus Module*
-Instead of energy intensive Proof-of-Work lightweight Proof-of-Authority consensus is realised, where fixed amount of network nodes called “block sealers” are operated by credible organizations with public exposure. As a result resource wastage can be eliminated inherent to Proof-of-Work and ensure reasonable transaction costs.
+Instead of energy intensive Proof-of-Work lightweight **Proof-of-Authority consensus and Separation of Powers** are realised, where fixed amount of network nodes called “block sealers” are operated by credible organizations with public exposure. As a result resource wastage can be eliminated inherent to Proof-of-Work and ensure reasonable transaction costs.
 
 * *Token Staking*
 Instead of gas transaction fee model **token staking model** is implemented, where token supply represents total available network throughput and each token represents fraction of it. Application developers need to stake tokens (locking them for specific period of time) to receive access to required network bandwidth and may adjust staked amount from time to time accordingly to their needs. Developers don’t need to worry about token price volatility between revisions of their bandwidth requirements.
