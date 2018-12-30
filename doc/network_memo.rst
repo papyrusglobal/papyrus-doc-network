@@ -13,6 +13,7 @@ Papyrus Network is based on Ethereum code base with two major changes:
 What challenges does Papyrus Network solve?
 ------------
 Nowadays there are a lot of challenges of using public blockchains as application platforms and for the wide-usage:
+
 * Lack of trust (network is usually controlled by anonymous elite, which control largest mining pools or use coalitions of network nodes in own interest).
 
 * Lack of reliability (network is not protected from failures and application developer may experience large losses due to mistakes of others).
