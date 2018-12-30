@@ -6,7 +6,7 @@ This is the first Ethereum-based scalable universal blockchain network with vari
 
 Papyrus Network is based on Ethereum code base with two major changes:
  
-* Instead of energy intensive Proof-of-Work a lightweight Proof-of-Authority consensus is used, where fixed amount of network nodes called “block sealers” are operated by credible organizations with public exposure.
+* Instead of energy intensive Proof-of-Work a lightweight **Proof-of-Authority consensus** is used, where fixed amount of network nodes called “block sealers” are operated by credible organizations with public exposure.
 
 * Instead of gas transaction fee model **token staking model** is implemented, where token supply represents total available network throughput and each token represents fraction of it. Application developers need to stake tokens (locking them for specific period of time) to receive access to required network bandwidth and may adjust staked amount from time to time accordingly to their needs. Developers don’t need to worry about token price volatility between revisions of their bandwidth requirements.
 
