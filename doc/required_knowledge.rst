@@ -11,7 +11,7 @@ If you have no any experience in Ethereum, don’t you worry! Solidity itself is
 https://ethereumbuilders.gitbooks.io/guide/content/en/solidity_tutorials.html
 And this generic tutorial:
 https://solidity.readthedocs.io/en/v0.4.24/
-* Next step - to chose IDE. Remix IDE can be a suitable choice for the beginning - it is written in Java Script and supports all e2e development steps such as building/testing/debugging and deployment. 
+* Next step - to chose IDE. Remix IDE can be a suitable choice for the beginning - it is written in Java Script and supports all e2e development steps such as building/testing/debugging and deployment.
 * Geth — it is the official client software provided by the Ethereum Foundation. It contains Papyrus consensus, so you may deploy your own testnet or connect to Papyrus network or testnet.
 
 What if I do not have required scope of knowledge?
