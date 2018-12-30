@@ -1,15 +1,16 @@
 Papyrus Network - Comparison Matrix
 ===================================
 
-=====================   	===========================  	==========================	====================
+=====================   	===========================  	==========================	============================
 Blockchain                         	**Ethereum**        	**EOS**                  	**Papyrus Network**
+=====================   	===========================  	==========================	============================ 
 TPS                                           	15        	3000                   	1200
-Block Time                                   	12s        	0.5s                   	3s
+Block Time                                   	12s        	0.5s                   	   3s
 Block Finality                     	Probabilistic     	Yes, in 180s               	Yes, maximum timing
                                                                                         	depends on amount
                                                                                         	of validators
-Consensus                                    	PoW        	dPoS                   	PoA
-Transaction Model                            	Gas        	Staking                	Staking
+Consensus                                    	PoW        	dPoS                      	PoA
+Transaction Model                            	Gas        	Staking                   	Staking
 Average tx fee                          	0.25 USD      	1 USD per 1000 bytes         	< 0.001 USD
 very volatile                                            	of used RAM, very volatile
 Smart Contracts            	EVM/Solidity                          	WASM            	EVM/Solidity
@@ -24,4 +25,4 @@ Trust model             	51% Pow attack is            	21 block producers
                                                                                        	put their reputation
                                                                                        	and business at risk in
                                                                                        	case of abuse
-=====================   	===========================  	==========================	====================
+=====================   	===========================  	==========================	============================
