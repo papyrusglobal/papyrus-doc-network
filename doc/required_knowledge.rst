@@ -1,8 +1,11 @@
 Required knowledge
 ================
+
 Good news is that if you already had some experience with Ethereum, it can be applied in Papyrus Network. The same EVM fully compatible with Solidity is used in Papyrus network and as result, all your knowledge will be useful and existing smart contracts may be transferred to Papyrus to achieve greater performance and convenience.
-	One of the key differences is that in Ethereum you have to pay gas for any transaction but in the Papyrus network you can divide the contract execution fee between the contract developer and users by token staking.
-	Here ( ссылка на нашу статью про Papyrus PoA blockchain) you could read more about this staking system.
+
+One of the key differences is that in Ethereum you have to pay gas for any transaction but in the Papyrus network you can divide the contract execution fee between the contract developer and users by token staking.
+Here ( TODO link to Papyrus PoA blockchain) you could read more about this staking system.
+
 If you have no any experience in Ethereum, don’t you worry! Solidity itself is a pretty simple language and its syntax is very similar to JavaScript.
 - You can familiarize yourself with it by taking any guide, for example this one:
 https://ethereumbuilders.gitbooks.io/guide/content/en/solidity_tutorials.html
