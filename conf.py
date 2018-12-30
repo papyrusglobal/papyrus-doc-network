@@ -48,8 +48,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Papyrus Docs'
-copyright = u'2017, Alexander Shvets'
-author = u'Alexander Shvets'
+copyright = u'2018, Papyrus'
+author = u'Papyrus'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -143,7 +143,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'PapyrusDocs.tex', u'Papyrus Docs Documentation',
-     u'Alexander Shvets', 'manual'),
+     u'Papyrus', 'manual'),
 ]
 
 
