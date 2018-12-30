@@ -2,7 +2,7 @@ Papyrus Network Memo
 ====================
 
 Papyrus network is a public blockchain for developers designed for mass adoption and enterprise usage.
-This is the first Ethereum-based scalable universal blockchain network with various smart contracts capabilities which can be successfully used in all industries, especially in data centric applications. Papyrus Network utilizes Proof of Authority (PoA) as its consensus mechanism. Developers have a possibility to code in Ethereum standards with the added benefits of Papyrus Network solutions to scalability and interoperability in blockchain networks.
+This is the first Ethereum-based scalable universal blockchain network with various smart contracts capabilities which can be successfully used in all industries, especially in data centric applications. Papyrus Network utilizes Proof-of-Authority (PoA) as its consensus mechanism. Developers have a possibility to code in Ethereum standards with the added benefits of Papyrus Network solutions to scalability and interoperability in blockchain networks.
 
 Papyrus Network is based on Ethereum code base with two major changes:
  
