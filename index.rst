@@ -17,6 +17,7 @@ Papyrus network is a public blockchain for developers designed for mass adoption
    doc/required_knowledge
    doc/comparison_matrix
    doc/faq
+   doc/staking
    doc/migration
 
 
