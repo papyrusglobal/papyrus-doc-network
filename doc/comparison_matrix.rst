@@ -1,4 +1,4 @@
 Papyrus Network - Comparison Matrix
 ===================================
 
-.. figure:: table.pdf
+.. figure:: doc/table.pdf
