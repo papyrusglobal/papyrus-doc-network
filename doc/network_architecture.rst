@@ -68,15 +68,36 @@ Candidate Node becomes Authority Node if it keeps minimum 3 votes and holds in t
 
 Removal of Authority Node
 -------------------------
-Authority Node or candidate Node is removed and added to the authority nodes blacklist if other Authority Node proposes blacklisting of the Node and a) quorum of >50% of Authority Nodes votes for the proposal keeps for 3 continuous days; b) at least 50% of Authority Nodes vote in favor of blacklisting the Node for the same 3 continuous days. Blacklisted nodes cannot become Authority Nodes again until they are removed from the authority nodes blacklist. Removal from the authority nodes blacklist may be performed by using the same approval process as for adding to the authority nodes blacklist.
-Authority Node or candidate Node is removed and added to the stakeholders blacklist if token stakeholder propose blacklisting of the Node and a) quorum of >10% of staked token votes for the proposal keeps for 3 continuous days; b) at least 50% of token votes are in favor of blacklisting the Node for the same 3 continuous days. Blacklisted nodes cannot become Authority Nodes again until they are removed from the stakeholders blacklist. Removal from the stakeholders blacklist may be performed by using the same approval process as for adding to the stakeholders blacklist.
-Authority Node is removed if a) current amount of Authority nodes is 47; b) new Authority Node is being added; c) the Node had the lowest average amount of votes for past 7 days period among Authority Nodes, where only votes from other Authority Nodes are counted.
+Authority Node or candidate Node is removed and added to the authority nodes blacklist if other Authority Node proposes blacklisting of the Node and:
+
+- a) quorum of >50% of Authority Nodes votes for the proposal keeps for 3 continuous days. 
+- b) at least 50% of Authority Nodes vote in favor of blacklisting the Node for the same 3 continuous days.
+
+Blacklisted nodes cannot become Authority Nodes again until they are removed from the authority nodes blacklist. Removal from the authority nodes blacklist may be performed by using the same approval process as for adding to the authority nodes blacklist.
+Authority Node or candidate Node is removed and added to the stakeholders blacklist if token stakeholder propose blacklisting of the Node and: 
+
+- a) quorum of >10% of staked token votes for the proposal keeps for 3 continuous days
+- b) at least 50% of token votes are in favor of blacklisting the Node for the same 3 continuous days.
+
+Blacklisted nodes cannot become Authority Nodes again until they are removed from the stakeholders blacklist. Removal from the stakeholders blacklist may be performed by using the same approval process as for adding to the stakeholders blacklist.
+Authority Node is removed if
+
+- a) current amount of Authority nodes is 47
+- b) new Authority Node is being added
+- c) the Node had the lowest average amount of votes for past 7 days period among Authority Nodes, where only votes from other Authority Nodes are counted.
 
 Changing the maximum number of allowed Authority Nodes
 ------------------------------------------------------
-Initial number of allowed Authority Nodes is 47. This number is used as parameter in the process of decision making for adding new Authority Node or removal of existing Authority Node. Token stakeholder can propose amending this number and it will be amended if a) quorum of >10% of staked token votes for the proposal keeps for 7 continuous days within 30 days period; b) no fewer than 10% more Yes than No votes sustain for the same 7 continuous days within 30 days period. 
+Initial number of allowed Authority Nodes is 47. This number is used as parameter in the process of decision making for adding new Authority Node or removal of existing Authority Node. Token stakeholder can propose amending this number and it will be amended if
+
+- a) quorum of >10% of staked token votes for the proposal keeps for 7 continuous days within 30 days period
+- b) no fewer than 10% more Yes than No votes sustain for the same 7 continuous days within 30 days period. 
+
 Changing token rewards for Authority Nodes. 
-Token reward rules for Authority Nodes are defined within the protocol implemented at the launch of Papyrus Network. Token stakeholder can propose amending these rules and they will be amended if a) quorum of >10% of staked token votes for the proposal keeps for 7 continuous days within 30 days period; b) no fewer than 10% more Yes than No votes sustain for the same 7 continuous days within 30 days period. 
+Token reward rules for Authority Nodes are defined within the protocol implemented at the launch of Papyrus Network. Token stakeholder can propose amending these rules and they will be amended if
+
+- a) quorum of >10% of staked token votes for the proposal keeps for 7 continuous days within 30 days period
+- b) no fewer than 10% more Yes than No votes sustain for the same 7 continuous days within 30 days period. 
 
 Authority Nodes approval recommendation
 ---------------------------------------
