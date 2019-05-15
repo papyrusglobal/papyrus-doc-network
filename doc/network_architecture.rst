@@ -111,7 +111,7 @@ It is also recommended that Authority Node make a proposal and vote for proposal
 Authority Nodes token reward recommendation
 -------------------------------------------
  
-To incentivize Authority Nodes participation, they shall receive token rewards for each block, which they include in the blockchain. With 3 seconds block interval it is recommended to set block reward at 5*K PPR tokens per block, where K = {AMOUNT OF AUTHORITY NODES}/47. It will keep annual inflation of PPR token supply at ~5% for the network with 47 Authority Nodes, and it will avoid Authority Node reward dilution due to new nodes joining the network. As rewards aren’t diluted, Authority Nodes will be incentivized to propose new nodes inclusion to increase trust and adoption of the network, influencing token value. 
+To incentivize Authority Nodes participation, they shall receive token rewards for each block, which they include in the blockchain. With 3 seconds block interval it is recommended to set block reward at 5*K PPR tokens per block, where *K = {AMOUNT OF AUTHORITY NODES}/47*. It will keep annual inflation of PPR token supply at ~5% for the network with 47 Authority Nodes, and it will avoid Authority Node reward dilution due to new nodes joining the network. As rewards aren’t diluted, Authority Nodes will be incentivized to propose new nodes inclusion to increase trust and adoption of the network, influencing token value. 
 As network usage grow token holders may amend block reward amount by facilitation decision process, established by the Constitution.
 
 Attack considerations
@@ -123,5 +123,4 @@ In case if network attack such as double spending under very unlikely situation,
 
 Node requirements
 -----------------
-An Authority Masternode must be located on a server or virtual private server (VPS) running Linux. Servers should not be exposed to anything critical or high-risk vulnerabilities. A vulnerability test of the Authority Masternode environment will be performed by the Foundation. Furthermore, Authority Masternodes must be on a server with a fixed IP address.
-From techincal prospective it should have at least 1cpu, 2gb ram, 250g disk
+An Authority Node must be located on a server or virtual private server (VPS) running Linux with a fixed IP address. Servers should not be exposed to anything critical or high-risk vulnerabilities.
