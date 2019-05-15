@@ -100,5 +100,7 @@ Network governance and resistance to attacks is considered sufficient, assuming 
 When amount of Authority Nodes in the network is between 5 and 47, three or more nodes can collude to include more their allies as nodes into the network with the idea of eventually getting control over 50%+ Authority Nodes and performing network attack. Assuming that honest Nodes represent at least 50% of the Authority Nodes at the moment of attack preparation suspicion, they shall blacklist proposed node candidates to tolerate potential attack.
 In case if network attack such as double spending under very unlikely situation, when attackers mange to get control of more than 50% of Authority Nodes, token stakeholders together with honest Nodes can make hard fork of the blockchain and use media resources to distribute information and updates on proper version of the network to network customers. 
 
-Add Admin grants & possibility to change bios contract
-------------------------------------------------------
+Node requirements
+-----------------
+An Authority Masternode must be located on a server or virtual private server (VPS) running Linux. Servers should not be exposed to anything critical or high-risk vulnerabilities. A vulnerability test of the Authority Masternode environment will be performed by the Foundation. Furthermore, Authority Masternodes must be on a server with a fixed IP address.
+From techincal prospective it should have at least 1cpu, 2gb ram, 250g disk
