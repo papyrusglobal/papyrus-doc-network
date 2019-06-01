@@ -35,6 +35,7 @@ Major advantages of Papyrus Network are:
    doc/staking
    doc/migration
    doc/network_architecture
+   doc/voting
 
 
 Indices and tables
