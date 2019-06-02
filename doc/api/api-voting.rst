@@ -2,9 +2,24 @@ API: Voting
 ===========
 
 
-Bios.sol - is the main kernel smartcontract with all the logic about consensus and staking. Its based on the QueueHelper that brings queue implementation code.
+``Bios.sol`` - is the main kernel smartcontract with all the logic about consensus and staking. Its based on the ``QueueHelper`` that brings queue implementation code.
 
+its global variables defined as follows:
 
+.. container:: codeset
+
+   .. sourcecode:: kotlin
+
+    uint32 constant freezeGap = 5 seconds;   // time gap before withdrawing melted stake
+
+    /// Public data shared with client code.
+    mapping(address=>uint) public stakes;    // stakes map reside in slot #0
+    address[] public sealers;                // sealers array reside in slot #1
+
+    /// Public contract state.
+    uint constant public version = 1;        // contract code version
+    mapping(address=>Queue) public melting;  // melting stakes queues
+    
 
 - **function freeze() payable public**
 Stake the specified amount of money.
