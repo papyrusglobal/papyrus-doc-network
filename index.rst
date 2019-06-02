@@ -28,14 +28,15 @@ Major advantages of Papyrus Network are:
    :caption: Contents:
 
    doc/network_memo
-   doc/required_knowledge
-   doc/comparison_matrix
-   doc/faq
-   doc/on_boarding
-   doc/staking
-   doc/migration
    doc/network_architecture
+   doc/consensus
+   doc/authority_nodes
+   doc/staking
    doc/voting
+   doc/bios_contract
+   doc/comparison_matrix
+   doc/migration
+
 
 
 Indices and tables
