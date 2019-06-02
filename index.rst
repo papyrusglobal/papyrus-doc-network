@@ -6,11 +6,11 @@
 Welcome to Papyrus Network documentation!
 =============================================
 
-Papyrus Network is a public blockchain and decentralised applications platform, based on the Papyrus protocol, which was created as refined vesrion of Ethereum protocol with Proof-of-Authority consensus for better scalability, security, robustness and true user-friendly application interfaces. 
+Papyrus Network is a blockchain and decentralised applications platform, based on the Papyrus protocol, which was created as refined vesrion of Ethereum protocol with Proof-of-Authority consensus for better scalability, security, robustness and user-friendly application interfaces. 
 
-Mission of Papyrus Network is to stimulate adoption of decentralized applications across the globe by resolving issues, which are slowing down practical applications, such as limited network throughput, security risks, volatile transactional fees, difficult user onboarding process. 
+Mission of Papyrus Network is to stimulate adoption of decentralized applications in B2C and enterprise segments across the globe by resolving issues, which are slowing down their practical adoption, such as limited network throughput, security risks, volatile transactional fees, complicated user onboarding process. 
 
-Papyrus Network is compatible with Ethereum ecosystem of 3rd party software, user wallets, developer libraries and productivity tools. Ethereum dApps can be launched within Papyrus Network, achieving improved stability, scalability, speed and security, while also simplifying user onboarding process by removing barriers of calculating gas limit and setting gas price, up to removal of transactional fees for users completely.  
+Papyrus Network is compatible with Ethereum ecosystem of 3rd party software, user wallets, developer libraries and productivity tools. Ethereum dApps can be launched within Papyrus Network, achieving improved stability, scalability, speed and security, while also simplifying user onboarding process by removing barriers like calculation of gas limit and gas price, and enabling removal of transactional fees for users completely.  
 
 Major advantages of Papyrus Network are:
 
