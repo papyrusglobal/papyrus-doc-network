@@ -1,4 +1,4 @@
-Papyrus Network - Comparison Matrix
+Comparison of Public Blockchain Networks 
 ===================================
 
 .. image:: images/table-1.jpg
