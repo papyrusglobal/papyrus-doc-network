@@ -1,5 +1,5 @@
-Papyrus Network Vision or Why We Created It? 
-============================================
+Papyrus Network Vision
+======================
 
 Papyrus Network is a new Ethereum-based public blockchain designed for ultimate mass adoption of decentralised applications.
 Main idea of Papyrus Network design was to make a perfect ecosystem, which removes limitations, which slow down growth of the user base in existing public blockchain networks such as Ethereum and EOS.  
