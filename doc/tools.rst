@@ -11,7 +11,7 @@ MainNet - TBA
 
 **2. Papyrus Statistics**
 
-TestNet - https://stats.papyrus.network 
+TestNet - https://status.papyrus.network 
 
 MainNet - TBA
 
