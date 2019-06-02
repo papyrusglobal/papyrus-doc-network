@@ -1,6 +1,8 @@
 API: Voting
 ===========
 
+Contract overview
+-----------------
 
 ``Bios.sol`` - is the main kernel smartcontract with all the logic about consensus and staking. Its based on the ``QueueHelper`` that brings queue implementation code.
 
@@ -8,7 +10,7 @@ its global variables defined as follows:
 
 .. container:: codeset
 
-   .. sourcecode:: kotlin
+   .. sourcecode:: solidity
 
     uint32 constant freezeGap = 5 seconds;   // time gap before withdrawing melted stake
 
@@ -20,6 +22,9 @@ its global variables defined as follows:
     uint constant public version = 1;        // contract code version
     mapping(address=>Queue) public melting;  // melting stakes queues
     
+
+Functions
+---------
 
 - **function freeze() payable public**
 Stake the specified amount of money.
