@@ -1,7 +1,7 @@
 Staking
 ================
 
-1. Why token staking?
+1. Why we implemented token staking in Papyrus Network?
 
 Token staking is the method to allocate network bandwidth to specific user or application developer needs. We use idea of toknisation to manage network resources and avoid network flood and sybil attacks on the network. 
 
