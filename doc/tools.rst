@@ -9,7 +9,7 @@ TestNet - https://explorer.papyrus.network
 
 MainNet - TBA
 
-**2. Papyrus Statistics**
+**2. Papyrus Network Status**
 
 TestNet - https://status.papyrus.network 
 
