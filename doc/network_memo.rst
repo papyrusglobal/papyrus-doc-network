@@ -1,5 +1,4 @@
-Papyrus Network Vision 
-(or Why I should run my dApp on Papyrus instead of Ethereum?)
+Papyrus Network Vision (or Why I should run my dApp on Papyrus instead of Ethereum?)
 ======================
 
 Papyrus Network is a new Ethereum-based public blockchain designed for ultimate mass adoption of decentralised applications.
