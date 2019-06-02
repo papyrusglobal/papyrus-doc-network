@@ -1,4 +1,4 @@
-Token staking
+Staking
 ================
 
 1. Why token staking?
