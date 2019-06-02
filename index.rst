@@ -27,12 +27,12 @@ Major advantages of Papyrus Network are:
    :maxdepth: 2
    :caption: Contents:
 
+   doc/papyrus_api
    doc/network_memo
    doc/network_architecture
    doc/consensus
    doc/authority_nodes
    doc/staking
-   doc/voting
    doc/bios_contract
    doc/comparison_matrix
    doc/migration
