@@ -1,9 +1,6 @@
-Voting
-======
+API: Voting
+===========
 
-
-Voting API
-----------
 
 Bios.sol - is the main kernel smartcontract with all the logic about consensus and staking. Its based on the QueueHelper that brings queue implementation code.
 
