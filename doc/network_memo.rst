@@ -28,7 +28,7 @@ Nowadays there are a lot of challenges of using public blockchains as applicatio
 
 * Extreme costs and volatility (application developers need to care about cryptocurrency prices because they are used to pay network fees, they cannot build stable business model because of too high dependence on cryptocurrency market).
 
-How we address these issues?
+How we address these issues
 ---------------------------------------
 By introducing elements of permissioned blockchain networks to public network setup. 
 
