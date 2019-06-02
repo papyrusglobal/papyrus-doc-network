@@ -1,7 +1,7 @@
 Migration from Ethereum
 ===================
 
-How to migrate my dApp from Ethereum public network?
+How to migrate my dApp to Papyrus Network?
 -------------
 
 TODO
