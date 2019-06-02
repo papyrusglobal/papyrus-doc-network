@@ -1,12 +1,12 @@
-Papyrus Network Memo
-====================
+Papyrus Network Vision
+======================
 
 Papyrus network is a public blockchain for developers designed for mass adoption and enterprise usage.
 This is the first Ethereum-based scalable universal blockchain network with various smart contracts capabilities which can be successfully used in all industries, especially in data centric applications. Papyrus Network utilizes Proof-of-Authority (PoA) as its consensus mechanism. Developers have a possibility to code in Ethereum standards with the added benefits of Papyrus Network solutions to scalability and interoperability in blockchain networks.
 
 Papyrus Network is based on Ethereum code base with two major changes:
  
-* Instead of energy intensive Proof-of-Work a lightweight **Proof-of-Authority consensus** is used, where fixed amount of network nodes called “block sealers” are operated by credible organizations with public exposure.
+* Instead of energy intensive Proof-of-Work a lightweight **Proof-of-Authority consensus** is used, where fixed amount of network nodes called “Authority Nodes” are operated by credible organizations with public exposure.
 
 * Instead of gas transaction fee model **token staking model** is implemented, where token supply represents total available network throughput and each token represents fraction of it. Application developers need to stake tokens (locking them for specific period of time) to receive access to required network bandwidth and may adjust staked amount from time to time accordingly to their needs. Developers don’t need to worry about token price volatility between revisions of their bandwidth requirements.
 
@@ -26,10 +26,8 @@ Nowadays there are a lot of challenges of using public blockchains as applicatio
 
 * Extreme costs and volatility (application developers need to care about cryptocurrency prices because they are used to pay network fees, they cannot build stable business model because of too high dependence on cryptocurrency market).
 
-What solution does Papyrus Network see?
+What principles can be used to address these issues? 
 ---------------------------------------
-The way to solve stated problems is to mix properties of permissioned and public blockchains:
-Network nodes shall be permissioned, while public access is allowed.
 
 * Trust – control of the network nodes should belong to decentralized consortium of credible organizations with full public disclosure of governance processes, disputes between application developers and consortium members should be settled by formal arbitration procedures established with legally binding agreements.
 
