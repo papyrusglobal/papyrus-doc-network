@@ -1,18 +1,20 @@
-Papyrus Network Vision
-======================
+Papyrus Network Vision or Why We Created It? 
+============================================
 
-Papyrus network is a public blockchain for developers designed for mass adoption and enterprise usage.
-This is the first Ethereum-based scalable universal blockchain network with various smart contracts capabilities which can be successfully used in all industries, especially in data centric applications. Papyrus Network utilizes Proof-of-Authority (PoA) as its consensus mechanism. Developers have a possibility to code in Ethereum standards with the added benefits of Papyrus Network solutions to scalability and interoperability in blockchain networks.
+Papyrus Network is a new Ethereum-based public blockchain designed for ultimate mass adoption of decentralised applications.
+Main idea of Papyrus Network design was to make a perfect ecosystem, which removes limitations, which slow down growth of the user base in existing public blockchain networks such as Ethereum and EOS.  
 
-Papyrus Network is based on Ethereum code base with two major changes:
+Papyrus Network have couple of characterisitics, which makes it a great choice for application developers, as it reduces network costs, while improving at the same time network robustness, scalability, and ability to serve for user-friendly applications with easy user onboarding. 
+
+Major changes to Ethereum, which we implemented in Papyrus Network, are:
  
-* Instead of energy intensive Proof-of-Work a lightweight **Proof-of-Authority consensus** is used, where fixed amount of network nodes called “Authority Nodes” are operated by credible organizations with public exposure.
+* Instead of energy intensive Proof-of-Work a lightweight **Proof-of-Authority consensus** is used, where fixed amount of network nodes called “Authority Nodes” are elected and operated by credible organizations. Papyrus Network has native system of checks and balances, which lead to better and secure governance. 
 
-* Instead of gas transaction fee model **token staking model** is implemented, where token supply represents total available network throughput and each token represents fraction of it. Application developers need to stake tokens (locking them for specific period of time) to receive access to required network bandwidth and may adjust staked amount from time to time accordingly to their needs. Developers don’t need to worry about token price volatility between revisions of their bandwidth requirements.
+* Instead of gas transaction fee model **token staking model** is implemented, where token supply represents available network throughput and each token represents fraction of it. Application developers need to stake tokens (locking them for specific period of time) to receive access to required network bandwidth and may adjust staked amount from time to time accordingly to their needs. Developers don’t need to worry about token price volatility between revisions of their bandwidth requirements.
 
-What challenges does Papyrus Network solve?
+Which challenges does Papyrus Network solve?
 ------------
-Nowadays there are a lot of challenges of using public blockchains as application platforms and for the wide-usage:
+Nowadays there are a lot of challenges of using public blockchains as application platforms:
 
 * Lack of trust (network is usually controlled by anonymous elite, which control largest mining pools or use coalitions of network nodes in own interest).
 
@@ -26,38 +28,35 @@ Nowadays there are a lot of challenges of using public blockchains as applicatio
 
 * Extreme costs and volatility (application developers need to care about cryptocurrency prices because they are used to pay network fees, they cannot build stable business model because of too high dependence on cryptocurrency market).
 
-What principles can be used to address these issues? 
+How we address these issues?
 ---------------------------------------
+By introducing elements of permissioned blockchain networks to public network setup. 
 
-* Trust – control of the network nodes should belong to decentralized consortium of credible organizations with full public disclosure of governance processes, disputes between application developers and consortium members should be settled by formal arbitration procedures established with legally binding agreements.
+* Trust – control of the network authority nodes belongs to decentralized consortium of credible organizations with full public disclosure of governance processes, by having multiple different organizations in the consortium network achieves trust that they won't collude and risk their reputation by attacking the network
 
-* Reliability – formal service level agreements with application developers may be introduced, network architecture should enable control of network resources allocation between registered application developers to avoid network overload.
+* Reliability – network architecture ensures network resources allocation between registered application developers to avoid network overload
 
-* Responsibility – being publicly exposed and having their business and reputation at risk consortium members will be responsible for their activities.
+* Responsibility – being publicly exposed and having their business and reputation at risk authority nodes owners are accountable for their activities
 
-* Great user experience – moving obligation to pay network fees from user to application developer significantly improve user experience as now users don’t need to care about keeping positive crypto wallet balance, calculating transaction fees and confirming them.
+* Great user experience – moving obligation to pay network fees from user to application developer, significantly improve user experience as now users don’t need to care about keeping positive crypto wallet balance, calculating transaction fees and confirming them
 
-* Reasonable and stable costs – application developers should be able to reserve necessary network bandwidth for specified period of time with reasonable upfront payment, it allow them to provision their expenses and eliminate crypto volatility impact on their business models.
+* Reasonable and predictable costs – application developers are able to reserve necessary network bandwidth for specified period of time with reasonable upfront payment, it allows them to provision their expenses and eliminate crypto volatility impact on their business models; overall cost of ownership is low because of limited amount of authority nodes in the network
 
-The main features of Papyrus Network
+The main advantages of Papyrus Network
 ------------
 
 * **Compatibility with existing Ethereum ecosystem** including wallets, smart contracts, and other tools; no need to study new languages and frameworks.
 
 * **Increased Network speed and reliability**: no more worries about application scalability and availability issues.
 
-* **High standard of network security** provided by the Authority nodes of credible organizations with public disclosure, which cannot be achieved in the environment of anonymous mining pools.
+* **High standard of network security** provided by the authority nodes managed by credible organizations, which cannot be achieved in the environment of anonymous mining pools.
 
-* **First Customer-Facing blockchain**, which doesn’t require a whole IT department for deploying and operating. P.N provides prepared node containers with instructions on how to deploy and run them without console magic.
-
-* **An Unprecedented level of user experience**  —  token staking model with no need to install complex plugins or browsers, pay fees or to make gas calculations; just use your application like any other  —  Facebook or Amazon.
+* **An Unprecedented level of user experience**  —  token staking model with no need to install complex plugins or browsers, pay various fees and make gas calculations; just use your application like any other  —  Facebook or Amazon.
 
 * **An easy way of making money** without building complex token economies — you can simply sell subscriptions or in-app services to your application users, accepting both traditional payments and cryptocurrencies.
 
-* **Low network resource cost and low volatility**: you can plan your infrastructure expenses in USD.
+* **Low network resource cost and low volatility**: you can plan your infrastructure expenses in advance thanks to token staking resource allocation model.
 
-* **Network availability ensured by token staking resource** allocation and protected from network clogging.
+* **Network reliability** network is protected from spam and DoS attacks by having staking procedure to consume network resources.
 
-* **Validators are all identified credible organizations** which put their reputation and business at risk in case of abuse.
-
-* **Network is governed by decentralized consortium** of credible organizations with public disclosure, creating high standard of network security, which cannot be achieved in the environment of anonymous mining pools.
+* **Authority node owners are all identified credible organizations** which put their reputation and business at risk in case of abuse.
