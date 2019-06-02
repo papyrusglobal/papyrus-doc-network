@@ -1,7 +1,7 @@
-Migration from Ethereum
+Migration
 ===================
 
-How to migrate my dApp to Papyrus Network?
+How to migrate my dApp from Ethereum to Papyrus Network?
 -------------
 
 TODO
