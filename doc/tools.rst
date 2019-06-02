@@ -1,4 +1,4 @@
-Papyrus Network Tools 
+Tools 
 =====================
 
 There are many tools created for developers and users of Papyrus Network.
