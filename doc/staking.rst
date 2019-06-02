@@ -1,7 +1,7 @@
 Staking
 ================
 
-1. Why we implemented token staking in Papyrus Network?
+**1. Why we implemented token staking in Papyrus Network?**
 
 Token staking is the method to allocate network bandwidth to specific user or application developer needs. We use idea of toknisation to manage network resources and avoid network flood and sybil attacks on the network. 
 
@@ -15,7 +15,7 @@ If existing stake provides bandwidth, that is not enough to run required transac
 
 Ultimately stake-based resource management allows application developers to plan network resources cost in advance and build reliable business models for their dApps. As an example, dApp developer could charge users off-chain (via Google Play or Apple App Store) and put them into on-chain whitelist to execute smart contract functions for free using developer's stake, thus significantly simplifying their onboarding to dApp.
 
-2. Howto
+**2. How to**
 
 Before making any transaction (including deploy of a new contract), user need to have its address staked.
 
