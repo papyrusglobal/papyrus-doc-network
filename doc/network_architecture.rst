@@ -111,7 +111,7 @@ It is also recommended that Authority Node make a proposal and vote for proposal
 Authority Nodes token reward recommendation
 -------------------------------------------
  
-To incentivize Authority Nodes participation, they shall receive token rewards for each block, which they include in the blockchain. With 3 seconds block interval it is recommended to set block reward at 5*K PPR tokens per block, where *K = {AMOUNT OF AUTHORITY NODES}/47*. It will keep annual inflation of PPR token supply at ~5% for the network with 47 Authority Nodes, and it will avoid Authority Node reward dilution due to new nodes joining the network. As rewards aren’t diluted, Authority Nodes will be incentivized to propose new nodes inclusion to increase trust and adoption of the network, influencing token value. 
+To incentivize Authority Nodes participation, they shall receive token rewards for each block, which they include in the blockchain. With 1 seconds block interval it is recommended to set block reward at 1.5*K PPR tokens per block, where *K = {AMOUNT OF AUTHORITY NODES}/47*. It will keep annual inflation of PPR token supply under 5% for the network with 47 Authority Nodes, and it will avoid Authority Node reward dilution due to new nodes joining the network. As rewards aren’t diluted, Authority Nodes will be incentivized to propose new nodes inclusion to increase trust and adoption of the network, influencing token value. 
 As network usage grow token holders may amend block reward amount by facilitation decision process, established by the Constitution.
 
 Attack considerations
