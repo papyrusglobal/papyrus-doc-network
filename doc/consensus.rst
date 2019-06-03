@@ -15,8 +15,7 @@ Assumptions used in Papyrus Network design
 
  * attack on the network by a group of network nodes will cause their removal from the network and possible hard fork, meaning that they will lose ability to receive mining rewards in the network;  
 
-* There are governance rules, initially established as constitutional for the network, which require agreement not only 
-between network nodes, but also between token holders, to change protocol;
+* There are governance rules, initially established as constitutional for the network, which require agreement not only between network nodes, but also between token holders, to change protocol;
 
 * Technically collusion/agreement between minimum of >50% of active network nodes should be required to manipulate/change the protocol, but it is not enough to run a successful attack, as it will be detected and considered as constitution violation, if change was not approved by token holders according to established policy.
 
