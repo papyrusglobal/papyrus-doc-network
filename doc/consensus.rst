@@ -11,9 +11,9 @@ Assumptions used in Papyrus Network design
 
 * Economy processes within the network is complemented with economy processes outside the network:
 
- - poor behaviour of network node owned by some business entity, may be covered in the media and cause reputational damage to the entity's other businesses, leading to its financial losses;
+ * poor behaviour of network node owned by some business entity, may be covered in the media and cause reputational damage to the entity's other businesses, leading to its financial losses;
 
- - attack on the network by a group of network nodes will cause their removal from the network and possible hard fork, meaning that they will lose ability to receive mining rewards in the network;  
+ * attack on the network by a group of network nodes will cause their removal from the network and possible hard fork, meaning that they will lose ability to receive mining rewards in the network;  
 
 * There are governance rules, initially established as constitutional for the network, which require agreement not only 
 between network nodes, but also between token holders, to change protocol;
