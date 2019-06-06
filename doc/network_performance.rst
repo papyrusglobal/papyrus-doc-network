@@ -6,28 +6,15 @@ To achieve these performance results we completely changed most of ethereum tran
 
 Results of this tuning you may see below:
 
-
---markup test:
-
-.. code-block:: python
-   :linenos:
-   :emphasize-lines: 3,5
-
-   def some_function():
-       interesting = False
-       print 'This line is highlighted.'
-       print 'This one is not...'
-       print '...but this one is.'
-
 *   ``tx_pool.go`` class that contains most of logic for the transaction pool:
 
 .. container:: codeset
 
-   .. code-block:: javascript
+    .. sourcecode::  before
 
         const (
             // chainHeadChanSize is the size of channel listening to ChainHeadEvent.
-            chainHeadChanSize = 10
+            chainHeadChanSize = 100
         )
         ...
         DefaultTxPoolConfig = TxPoolConfig{
@@ -40,7 +27,7 @@ Results of this tuning you may see below:
             GlobalQueue:  1024,
         }    
 
-   .. code-block:: javascript
+    .. sourcecode:: after
       :linenos:
       :emphasize-lines: 4,11,12,13,14
 
