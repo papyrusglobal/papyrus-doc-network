@@ -6,6 +6,23 @@ To achieve these performance results we completely changed most of ethereum tran
 
 Results of this tuning you may see below:
 
+.. container:: codeset
+
+   .. sourcecode:: kotlin
+
+        override fun verify(tx: LedgerTransaction) {
+            // Always accepts!
+        }
+
+   .. sourcecode:: java
+
+        @Override
+        public void verify(LedgerTransaction tx) {
+            // Always accepts!
+        }
+
+
+
 *   ``tx_pool.go`` class that contains most of logic for the transaction pool:
 
 .. container:: codeset
