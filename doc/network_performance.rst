@@ -10,7 +10,7 @@ Results of this tuning you may see below:
 
 .. container:: codeset
 
-   .. sourcecode:: java
+   .. sourcecode:: javascript
 
         const (
             // chainHeadChanSize is the size of channel listening to ChainHeadEvent.
@@ -27,11 +27,12 @@ Results of this tuning you may see below:
             GlobalQueue:  1024,
         }    
 
-   .. sourcecode:: kotlin
+   .. sourcecode:: javascript
+      :emphasize-lines: 4,11,12,13,14
 
         const (
             // chainHeadChanSize is the size of channel listening to ChainHeadEvent.
-            chainHeadChanSize = 10
+            chainHeadChanSize = 100
         )
         ...
         DefaultTxPoolConfig = TxPoolConfig{
