@@ -6,7 +6,19 @@ To achieve these performance results we completely changed most of ethereum tran
 
 Results of this tuning you may see below:
 
-* A  ``tx_pool.go`` class that contains most of logic for the transaction pool:
+--markup test:
+
+.. code-block:: python
+   :linenos:
+   :emphasize-lines: 3,5
+
+   def some_function():
+       interesting = False
+       print 'This line is highlighted.'
+       print 'This one is not...'
+       print '...but this one is.'
+
+*   ``tx_pool.go`` class that contains most of logic for the transaction pool:
 
 .. container:: codeset
 
