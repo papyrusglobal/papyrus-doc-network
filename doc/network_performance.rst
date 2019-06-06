@@ -10,7 +10,7 @@ Results of this tuning you may see below:
 
 .. container:: codeset
 
-   .. sourcecode:: before
+   .. sourcecode:: java
 
         const (
             // chainHeadChanSize is the size of channel listening to ChainHeadEvent.
@@ -27,7 +27,7 @@ Results of this tuning you may see below:
             GlobalQueue:  1024,
         }    
 
-   .. sourcecode:: after
+   .. sourcecode:: kotlin
 
         const (
             // chainHeadChanSize is the size of channel listening to ChainHeadEvent.
