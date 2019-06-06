@@ -37,7 +37,7 @@ Major advantages of Papyrus Network are:
    doc/migration
    doc/tools
    doc/work_in_progress
-
+   doc/network_performance
 
 
 Indices and tables
