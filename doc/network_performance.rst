@@ -16,6 +16,16 @@ Results of this tuning you may see below:
             // chainHeadChanSize is the size of channel listening to ChainHeadEvent.
             chainHeadChanSize = 10
         )
+        ...
+        DefaultTxPoolConfig = TxPoolConfig{
+            PriceLimit: 1,
+            PriceBump:  10,
+
+            AccountSlots: 16,
+            GlobalSlots:  4096,
+            AccountQueue: 64,
+            GlobalQueue:  1024,
+        }    
 
    .. sourcecode:: after
 
@@ -23,6 +33,16 @@ Results of this tuning you may see below:
             // chainHeadChanSize is the size of channel listening to ChainHeadEvent.
             chainHeadChanSize = 10
         )
+        ...
+        DefaultTxPoolConfig = TxPoolConfig{
+            PriceLimit: 1,
+            PriceBump:  10,
+
+            AccountSlots: 8192,
+            GlobalSlots:  131072,
+            AccountQueue: 4096,
+            GlobalQueue:  32768,
+        } 
 
 
 After that we added transaction batching.
