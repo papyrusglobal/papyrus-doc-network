@@ -45,15 +45,15 @@ Results
 
 Utility logs:
 
-.. image:: images/utility_logs.jpg
+.. image:: images/utility_logs.png
 
 Node logs:
 
-.. image:: images/node_logs.jpg
+.. image:: images/node_logs.png
 
 A visual representation, which can be seen on our monitor explorer (screenshot):
 
-.. image:: images/explorer_logs.jpg
+.. image:: images/explorer_logs.png
 
 The test shows, that 1500 transactions fall into a block every second it is generated.
 
