@@ -28,6 +28,7 @@ Results of this tuning you may see below:
         }    
 
    .. sourcecode:: javascript
+      :linenos:
       :emphasize-lines: 4,11,12,13,14
 
         const (
