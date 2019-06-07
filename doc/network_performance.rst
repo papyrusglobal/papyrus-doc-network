@@ -6,6 +6,31 @@ To achieve these performance results we completely changed most of ethereum tran
 
 Results of this tuning you may see below:
 
+
+``peer.go`` class that contains constants that are responsible for queue sizes.
+
+.. code-block:: javascript
+      :emphasize-lines: 5,10,15 
+      
+            // maxQueuedTxs is the maximum number of transaction lists to queue up before
+            // dropping broadcasts. This is a sensitive number as a transaction list might
+            // contain a single transaction, or thousands.
+            maxQueuedTxs = /*128*/ 16384
+
+            // maxQueuedProps is the maximum number of block propagations to queue up before
+            // dropping broadcasts. There's not much point in queueing stale blocks, so a few
+            // that might cover uncles should be enough.
+            maxQueuedProps = /*4*/ 32
+
+            // maxQueuedAnns is the maximum number of block announcements to queue up before
+            // dropping broadcasts. Similarly to block propagations, there's no point to queue
+            // above some healthy uncle limit, so use that.
+            maxQueuedAnns = /*4*/ 32
+            
+            handshakeTimeout = 5 * time.Second
+      ) 
+
+
 *   ``tx_pool.go`` class that contains most of logic for the transaction pool:
 
 .. code-block:: javascript
@@ -26,6 +51,7 @@ Results of this tuning you may see below:
             AccountQueue: /*64*/ 4096,
             GlobalQueue:  /*1024*/ 32768,
         } 
+
 
 
 After that we added transaction batching.
