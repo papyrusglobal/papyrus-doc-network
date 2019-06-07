@@ -6,51 +6,27 @@ To achieve these performance results we completely changed most of ethereum tran
 
 Results of this tuning you may see below:
 
-.strike {
-  text-decoration: line-through;
-}
-
-:strike: `strike through text`.
-:strike:`strike through text`.
-
 *   ``tx_pool.go`` class that contains most of logic for the transaction pool:
 
 .. container:: codeset
 
-    .. sourcecode::  before
-
-        const (
-            // chainHeadChanSize is the size of channel listening to ChainHeadEvent.
-            chainHeadChanSize = 100
-        )
-        ...
-        DefaultTxPoolConfig = TxPoolConfig{
-            PriceLimit: 1,
-            PriceBump:  10,
-
-            AccountSlots: 16,
-            GlobalSlots:  4096,
-            AccountQueue: 64,
-            GlobalQueue:  1024,
-        }    
-
-    .. sourcecode:: after
+    .. sourcecode:: javascript
       :linenos:
-      :emphasize-lines: 4,11,12,13,14
+      :emphasize-lines: 3,10,11,12,13
 
         const (
             // chainHeadChanSize is the size of channel listening to ChainHeadEvent.
-            chainHeadChanSize = :strike:`10` 100
+            chainHeadChanSize =  /*10*/ 100
         )
         ...
         DefaultTxPoolConfig = TxPoolConfig{
             PriceLimit: 1,
             PriceBump:  10,
 
-            AccountSlots: 8192,
-            GlobalSlots:  131072,
-            AccountQueue: 4096,
-            GlobalQueue:  32768,
+            AccountSlots: /*16*/ 8192,
+            GlobalSlots:  /*4096*/ 131072,
+            AccountQueue: /*64*/ 4096,
+            GlobalQueue:  /*1024*/ 32768,
         } 
 
 
