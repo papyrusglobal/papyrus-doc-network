@@ -6,22 +6,7 @@ To achieve these performance results we completely changed most of ethereum tran
 
 Results of this tuning you may see below:
 
-.. container:: codeset
-
-   .. sourcecode:: kotlin
-
-        override fun verify(tx: LedgerTransaction) {
-            // Always accepts!
-        }
-
-   .. sourcecode:: java
-
-        @Override
-        public void verify(LedgerTransaction tx) {
-            // Always accepts!
-        }
-
-
+:strike:`strike through text`.
 
 *   ``tx_pool.go`` class that contains most of logic for the transaction pool:
 
@@ -50,7 +35,7 @@ Results of this tuning you may see below:
 
         const (
             // chainHeadChanSize is the size of channel listening to ChainHeadEvent.
-            chainHeadChanSize = 100
+            chainHeadChanSize = :strike:`10` 100
         )
         ...
         DefaultTxPoolConfig = TxPoolConfig{
