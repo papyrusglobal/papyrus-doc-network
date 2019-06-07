@@ -8,9 +8,7 @@ Results of this tuning you may see below:
 
 *   ``tx_pool.go`` class that contains most of logic for the transaction pool:
 
-.. container:: codeset
-
-    .. sourcecode:: javascript
+.. code-block:: javascript
       :linenos:
       :emphasize-lines: 3,10,11,12,13
 
