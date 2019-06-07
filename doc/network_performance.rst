@@ -2,7 +2,7 @@ Network Performance
 ===================
 
 Papyrus network designed as high loaded solution that should be able to process more than 1000 tps.
-To achieve these performance results we completely changed most of ethereum transaction constants.
+To achieve these performance results we completely changed many transaction constants, batching and buffers were reimplemented.
 
 Results of this tuning you may see below:
 
