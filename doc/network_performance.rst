@@ -6,6 +6,10 @@ To achieve these performance results we completely changed most of ethereum tran
 
 Results of this tuning you may see below:
 
+.strike {
+  text-decoration: line-through;
+}
+
 :strike: `strike through text`.
 :strike:`strike through text`.
 
