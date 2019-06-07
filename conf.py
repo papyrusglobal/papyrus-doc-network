@@ -179,6 +179,3 @@ texinfo_documents = [
 
 html_show_sourcelink = False
 
-.strike {
-  text-decoration: line-through;
-}
