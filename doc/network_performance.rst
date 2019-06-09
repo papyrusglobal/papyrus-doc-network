@@ -2,12 +2,12 @@ Network Performance
 ===================
 
 Papyrus network designed as high loaded solution that should be able to process more than 1000 tps.
-To achieve these performance results we completely changed many transaction constants, batching and buffers were reimplemented.
+To achieve these performance results we reimplement batching and buffers to allow them to agregate more data. 
 
-Results of this tuning you may see below:
+First of all we had to increase potential number of transaction in queue.
 
-
-*  ``peer.go`` class that contains constants that are responsible for queue sizes.
+*  ``peer.go`` class that contains constants that are responsible for queue sizes. 
+We conducted a series of load tests and, after internal modeling, we stopped at the following set of values:
 
 .. code-block:: javascript
       :emphasize-lines: 4,9,14 
@@ -33,7 +33,7 @@ Results of this tuning you may see below:
 Next step was in increasing up to ten times size of transaction chain. For that reason few more classes were tuned by changing its constant values
 
 
-*  ``sync.go`` 
+*  ``sync.go`` - here where have overridden result size of our tansactions pack.
 
 .. code-block:: javascript
       :emphasize-lines: 3 
@@ -43,7 +43,9 @@ Next step was in increasing up to ten times size of transaction chain. For that 
             txsyncPackSize = /*100 * 1024*/ 1000 * 1024
 
 
-*  ``ethstats.go`` 
+In the next three classes - ``ethstats.go``, ``server.go``, ``worker.go`` we need to increase the size of chain head size.
+
+*  ``ethstats.go``
 
 .. code-block:: javascript
       :emphasize-lines: 4,9,14 
@@ -78,7 +80,7 @@ Next step was in increasing up to ten times size of transaction chain. For that 
             chainSideChanSize = 10
 
 
-*  ``tx_pool.go`` class that contains most of logic for the transaction pool:
+*  ``tx_pool.go`` class that contains most of logic for the transaction pool. As in previous classes - we had to override chain size and after that, according to our model, we significantly reworked the sizes of the slots
 
 .. code-block:: javascript
       :linenos:
