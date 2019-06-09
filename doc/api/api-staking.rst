@@ -1,4 +1,4 @@
-API: Voting
+API: Staking
 ===========
 
 Contract overview
