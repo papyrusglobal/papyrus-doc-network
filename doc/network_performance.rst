@@ -74,21 +74,13 @@ In the next three classes - ``ethstats.go``, ``server.go``, ``worker.go`` we nee
             // chainHeadChanSize is the size of channel listening to ChainHeadEvent.
             chainHeadChanSize = /*10*/ 100
 
-            // chainSideChanSize is the size of channel listening to ChainSideEvent.
-            chainSideChanSize = 10
-
 
 *  ``tx_pool.go`` class that contains most of logic for the transaction pool. As in previous classes - we had to override chain size and after that, according to our model, we significantly reworked the sizes of the slots
 
 .. code-block:: javascript
       :linenos:
-      :emphasize-lines: 3,10,11,12,13
+      :emphasize-lines: 5,6,7,8
 
-        const (
-            // chainHeadChanSize is the size of channel listening to ChainHeadEvent.
-            chainHeadChanSize =  /*10*/ 100
-        )
-        ...
         DefaultTxPoolConfig = TxPoolConfig{
             PriceLimit: 1,
             PriceBump:  10,
