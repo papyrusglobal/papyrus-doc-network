@@ -2,9 +2,7 @@ Network Performance
 ===================
 
 Papyrus network designed as high loaded solution that should be able to process more than 1000 tps.
-To achieve these performance results we reimplement batching and buffers to allow them to agregate more data. 
-
-First of all we had to increase potential number of transaction in queue.
+To achieve these performance results we reimplement batching and buffers to allow them to aggregate more data. To do that first of all we had to increase potential number of transaction in queue.
 
 *  ``peer.go`` class that contains constants that are responsible for queue sizes. 
 We conducted a series of load tests and, after internal modeling, we stopped at the following set of values:
