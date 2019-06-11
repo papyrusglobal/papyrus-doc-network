@@ -12,8 +12,8 @@ Functions
 
 - **function freeze() payable public**
 Stake the specified amount of tokens.
-The value is on the contract account and thus inaccessible to the sender.
-``Input parameter`` : "msg.value" the value to be staked.
+The value is on the contract account and thus inaccessible to the sender. 
+``Input parameter`` : "msg.value" the value to be staked. 
 ``Output parameter`` : none
 
 
