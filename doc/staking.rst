@@ -15,12 +15,13 @@ If existing stake provides bandwidth, that is not enough to run required transac
 
 Ultimately stake-based resource management allows application developers to plan network resources cost in advance and build reliable business models for their dApps. As an example, dApp developer could charge users off-chain (via Google Play or Apple App Store) and put them into on-chain whitelist to execute smart contract functions for free using developer's stake, thus significantly simplifying their onboarding to dApp.
 
-**2. How to**
+How to stake tokens
+-------------------
 
-Before making any transaction (including deploy of a new contract), user need to have its address staked.
+This section is in development - щur wallet with a convenient interface for this functionality will be announced soon.
 
-For staking addresses we have a contract at address `0x0000000000000000000000000000000000000022`. It source is [here](https://github.com/papyrusglobal/docker-images/blob/master/geth-papyrus/contracts/papyrus.sol).
+Code Examples
+-------------
 
-To check that the address is already staked and can be used to make transactions, call `IsFrozen` method with the address as the argument.
+Examples - how to use stakes in your DApp  `you could find in the API section <https://papyrus-network.readthedocs.io/en/latest/doc/api/api-staking.html>`_
 
-To stake the current address, call `freeze` method with no parameters. After that, all its balance will become unavailable for any subsequent transactions that try to decrease it. And after the `freezeGap` time, the address will be staked.
