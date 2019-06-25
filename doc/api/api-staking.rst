@@ -43,6 +43,18 @@ Return Stake and timestamp pair, where stake is the amount of money unstaked and
 ``Output parameter`` : uint8 - stake
 ``Output parameter`` : uint8 - timestamp
 
+
+- **function getFreeMeltingSlots() view public returns (uint8)**
+Service function, calculates the number of queue elements (slots) is aviable in the melting conveyer for the sender's account.
+Every unstake call consumes a slot, every withdrawal releases it. 
+``Input parameter`` : none
+``Output parameter`` : uint8 - number of free slots that could be used for the unstaking
+
+- **function getMeltingHead() view public returns (uint224 stake, uint32 timestamp)**
+Service function, calculates the latest melting conveyer slot to be withdrawn first.
+``Input parameter`` : none
+``Output parameter`` : uint224 stake, uint32 timestamp - pair, where stake is the amount of money unstaked and timestamp is the time of the unstake call.
+
 API Usage Example
 -----------------
 
