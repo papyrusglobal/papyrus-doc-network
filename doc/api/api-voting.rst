@@ -25,30 +25,21 @@ Propose a poll for blacklisting the authority to the authority black list.
 Proposal Examples
 -----------------
 
-Below you can see JS example of usage ``Bios.sol`` smartcontract from the Papyrus Wallet implemetatin
+Below you can see JS example of usage ``Bios.sol`` smartcontract from the Papyrus Wallet implemetation:
+
 
 .. code-block:: javascript
       :emphasize-lines: 3, 14
       
-    async proposeNewAuthority(address, callbacks = {}) {
+	async proposeNewAuthority(address, callbacks = {}) {
 	    return this.process(
 	      this.contract.methods.proposeNewAuthority(address).send({
-	        from: this.account,
-	        gas: 100000
+		from: this.account,
+		gas: 100000
 	      }),
 	      callbacks
 	    );
-  	}
-
-    async proposeBlacklistAuthority(address, callbacks = {}) {
-	    return this.process(
-	      this.contract.methods.proposeBlacklistAuthority(address).send({
-	        from: this.account,
-	        gas: 100000
-	      }),
-	      callbacks
-	    );
- 	}
+	}
 
 
 Voting Functions
