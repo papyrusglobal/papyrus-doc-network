@@ -29,7 +29,7 @@ Below you can see JS example of usage ``Bios.sol`` smartcontract from the Papyru
 
 .. code-block:: javascript
       :emphasize-lines: 3, 14
-
+      
     async proposeNewAuthority(address, callbacks = {}) {
 	    return this.process(
 	      this.contract.methods.proposeNewAuthority(address).send({
