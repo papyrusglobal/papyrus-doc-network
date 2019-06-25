@@ -67,7 +67,6 @@ Voting Examples
 ---------------
 
 .. code-block:: javascript
-      :emphasize-lines: 3, 14
 
 	import Web3 from 'web3';
 	import abi from '@/abis/abi.json';
