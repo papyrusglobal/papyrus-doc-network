@@ -34,7 +34,6 @@ Major advantages of Papyrus Network are:
    doc/authority_nodes
    doc/staking
    doc/papyrus_api
-   doc/migration
    doc/tools
    doc/work_in_progress
    doc/network_performance
