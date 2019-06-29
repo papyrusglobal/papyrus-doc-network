@@ -23,6 +23,7 @@ Papyrus Wallet works with MetaMask extension and gives you a particularly user-f
 To stake your tokens just chose staking tab and then fill the fields with stakes or gaslimit and press Stakes button. 
 By default - stake will be processed onto your address, function to delegate stakes is in-progress now and will be available soon.
 Main Papyrus Wallet inteface you could see on the screenshot: 
+
 .. image:: images/w1.png
 
 You can easily unstake your tokens, just go to the Unstake tab and enter value for unstaking.
