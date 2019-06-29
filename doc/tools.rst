@@ -5,17 +5,16 @@ There are many tools created for developers and users of Papyrus Network.
 
 **1. Papyrus Explorer**
 
-TestNet - https://explorer.papyrus.network 
-
-MainNet - TBA
+TestNet - https://explorer-testnet.papyrus.network 
 
 **2. Papyrus Network Status**
 
 TestNet - https://status.papyrus.network 
 
-MainNet - TBA
-
 **3. Papyrus Wallet**
 
-https://wallet.papyrus.network 
+TestNet - https://wallet-testnet.papyrus.network 
 
+**4. Papyrus-Ethereum Bridge**
+
+TestNet<->Rinkeby Bridge - https://bridge-testnet.papyrus.network 
