@@ -7,5 +7,6 @@ The following are the core APIs that could be used in the development of Papyrus
    :maxdepth: 2
    :caption: Contents:
 
+   api/api-bios
    api/api-staking
    api/api-voting
