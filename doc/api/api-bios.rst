@@ -20,7 +20,7 @@ BIOS Usages examples
 Let's take a look at the simple example of Javascript code that will get all authorities nodes from our BIOS contract. 
 
 .. code-block:: javascript
-      :emphasize-lines: 2, 7, 14
+      :emphasize-lines: 2, 7, 15
 
 	const { eth } = require('./web3relay');
 	const ABI = require('../abi/bios');
