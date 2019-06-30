@@ -10,7 +10,8 @@ Latest version of the Bios contact you can always  `find in our repo <https://gi
 BIOS Addresses
 --------------
 
-Testnet BIOS address : `0x8f98d0aa9b01e7d15a7950db68b26b89d6f1be14 <http://explorer-testnet.papyrus.network/addr/0x8f98d0aa9b01e7d15a7950db68b26b89d6f1be14#tab_addr_1>`_ 
+Testnet BIOS address : `0x8f98d0aa9b01e7d15a7950db68b26b89d6f1be14 <http://explorer-testnet.papyrus.network/addr/0x8f98d0aa9b01e7d15a7950db68b26b89d6f1be14#tab_addr_1>`_
+
 Testnet `BIOS Abi <https://github.com/papyrusglobal/explorer/blob/master/abi/bios.json>`_  
 
 BIOS Usages examples
