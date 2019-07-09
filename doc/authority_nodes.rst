@@ -20,12 +20,14 @@ https://papyrusglobal.typeform.com/to/Va9wX5
 Instruction on how to set up a node can be found here:
 https://github.com/papyrusglobal/papyrus
 
-*Recommended Authority Node configuration:*
+**Recommended Authority Node configuration:**
+
 CPU - Intel® Core™ i7 or more powerful
 RAM: 64Gb+
 Hard drive: 512Gb+ (SSD recommended)
 Connection: 100 MBit/s+ port
 
-*Expected Authority Node rewards:* 
+**Expected Authority Node rewards:**
+
 Monthly PPR reward for active Authority Node is equal to 4.5*20*60*24*30*(K/47)*(1/K) = ~82,723.4 PPR
 
