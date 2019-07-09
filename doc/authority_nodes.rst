@@ -5,10 +5,10 @@ Papyrus Network is operated by Authority Nodes, which provide their hardware cap
 
 Papyrus Network protocol allows up to 47 Authority Nodes to be a part of the network.
 
-In exchange for maintaining network operations Authority Nodes get mining rewards equal to 4.5*K PPR tokens per block, where K = {AMOUNT OF AUTHORITY NODES}/47. 
+In exchange for maintaining network operations Authority Nodes get mining rewards equal to 3*K PPR tokens per block, where K = {AMOUNT OF AUTHORITY NODES}/47. 
 
 PPR token is a native token of Papyrus Network required to allocate network resources to execute transactions. 
-There are 1 000 000 000 PPR tokens distributed at the genesis block, and according to mining rewards schedule with 3 seconds block interval annual inflation is limited with a maximum amount of new tokens equal to (20 blocks per minute)*60*24*365*4.5*(47/47)= 47 304 000 PPR, ie < 5% of total emission.
+There are 1 000 000 000 PPR tokens distributed at the genesis block, and according to mining rewards schedule with 3 seconds block interval annual inflation is limited with a maximum amount of new tokens equal to (20 blocks per minute)*60*24*365*3*(47/47)= 31 536 000 PPR, ie ~ 3% of total emission.
 
 Mining rewards are subject to change based on community voting (see Governance documentation).
 
@@ -32,5 +32,5 @@ Connection: 100 MBit/s+ port
 
 **Expected Authority Node rewards:**
 
-Monthly PPR reward for active Authority Node is equal to 4.5*20*60*24*30*(K/47)*(1/K) = ~82,723.4 PPR
+Monthly PPR reward for active Authority Node is equal to 3*20*60*24*30*(K/47)*(1/K) = ~55,149 PPR
 
