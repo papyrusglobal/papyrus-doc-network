@@ -23,8 +23,11 @@ https://github.com/papyrusglobal/papyrus
 **Recommended Authority Node configuration:**
 
 CPU - Intel® Core™ i7 or more powerful
+
 RAM: 64Gb+
+
 Hard drive: 512Gb+ (SSD recommended)
+
 Connection: 100 MBit/s+ port
 
 **Expected Authority Node rewards:**
