@@ -17,10 +17,27 @@ The value is on the contract account and thus inaccessible to the sender.
 ``Output parameter`` : none
 
 
+- **function freezeForContract(address contract_) payable public**
+Stake the specified amount of money to the given contract account.
+The value is on the contract account and thus inaccessible to the sender.
+(address contract_) payable public {
+``Input parameter`` : "msg.value" the value to be staked. 
+``Input parameter`` : address - the contract to stake for. 
+``Output parameter`` : none
+
+
 - **function melt(uint224 val) public**
 Unstake the specified value of tokens.
 The value is put to the melting queue and can be withdrawn after `freezeGap`.
 ``Input parameter`` : "val" - value to unstake.
+``Output parameter`` : none
+
+
+- **function meltFromContract(address contract_, uint224 val) public**
+Function to unstake the specified value of money from the contract account. 
+The value is put to the melting queue and can be withdrawn after `kFreezeStake`.
+``Input parameter`` : "val" - value to unstake.
+``Input parameter`` : address - the contract to unstake from.
 ``Output parameter`` : none
 
 - **function withdraw() public**
