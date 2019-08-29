@@ -21,7 +21,7 @@ How to stake tokens
 The easyest way to stake/unstake tokens is to `use Papyrus Wallet. <https://docs.papyrus.network/en/latest/doc/tools.html>`_
 Papyrus Wallet works with MetaMask extension and gives you a particularly user-friendly interface for all features of Papyrus Network. 
 To stake your tokens just chose staking tab and then fill the fields with stakes or gaslimit and press Stakes button. 
-By default - stake will be processed onto your address, function to delegate stakes is in-progress now and will be available soon.
+By default - stake will be processed onto your address. To stake on smartcontract - just fill its address to the field and push stake button! Remember that only one stake is available to the one smartcontract. 
 Main Papyrus Wallet inteface you could see on the screenshot: 
 
 .. image:: images/w1.png
