@@ -3,61 +3,59 @@ Governance
 
 There are many issues with governance paradigms used in other blockchain solutions, which lead to unacceptable level of centralization. For instance, EOS network is governed by Constitution and 21 Block Producers, which execute EOS protocol and are elected using dPoS mechanism. But voting thresholds to become elected BPs are low due to absence of quorum requirements, and power is consolidated in the hands of few people with significant token holdings and influence over BP decisions. Political systems, where power is consolidated in the hands of richest, are called plutocracy. In another dPoS network - TRON - situation is even worse, as not only BPs are elected by elite token holders with large stakes, but BPs are allowed to buy votes from token holders, and they spend their mining rewards to attract votes, instead of investments in better service and infrastructure. On the opposite, PoW networks have an issue with consolidation of power in large mining pools, controlling a significant percentage of network’s hashpower and effectively controlling the network itself. 
 
-Our design goal in Papyrus Network was to construct governance protocol, which is aligned with Proof-of-Authority consensus for network scalability reasons, in a way to maintain greater level of decentralization and incentivize benefit of everyone: token holders, miners (authority nodes) and network customers (application developers and users). To achieve this goal we implemented flexible governance protocol, which somewhat reflects how corporations are managed in the modern world by shareholders and the board of directors. We believe that this is the best construction to be used as the network evolves and its usage grow, and also to stimulate this growth.
+Our design goal in Papyrus Network was to construct governance protocol, which is aligned with Proof-of-Authority consensus for network scalability reasons, in a way to maintain greater level of decentralization and incentivize benefit of everyone: token holders, miners (authority nodes) and network customers (application developers and users). To achieve this goal we implemented flexible governance protocol, which somewhat reflects how corporations are managed in the modern world by shareholders and the board of directors. We believe that this is the best construction to be used as the network evolves to stimulate its growth.
 
-Constitution
+Papyrus Network User Agreement
 ------------
 
-Constitution of Papyrus Network consists of the articles, accepted by default by all network participants (authority nodes, application developers, users). When anyone starts using the network, it is assumed that he is ready to work according to the Constitution and agreed network protocol. 
+Definitions
+-----------
 
-We found a good fit in EOS constitution and used it as a basis for Papyrus Network Constitution.
+Papyrus Network User Agreement: This document (PNUA)
 
-Articles
---------
+Chain ID: 32328
 
-This Constitution is a multi-party contract entered into by the Members by virtue of their use of Papyrus Network.
+BIOS Contract: An Papyrus Network smart contract with a dynamic permissions structure, which defines network governance procedures.
 
-- Article I - No Initiation of Violence - Members shall not initiate violence or the threat of violence against another Member.
+BIOS Contract Address: 0xEd72cEd9C8515596b7D7503869E011e8617f48aF
 
-- Article II - No Perjury - Members shall be liable for losses caused by false or misleading attestations and shall forfeit any profit gained thereby.
+User: Any person or organization of persons who maintain(s) direct or indirect ownership of an Papyrus Network address, or property connected to an Papyrus Network address.
 
-- Article III - Rights - The Members grant the right of contract and of private property to each other, therefore no property shall change hands except with the consent of the owner, by a valid Arbitrator’s order, or via community referendum. This Constitution creates no positive rights for or between any Members.
+Ownership: Direct or indirect access to an Papyrus Network address through one or more valid permissions checks. Ownership may be partially shared between Users through the use of multi-signature permissions.
 
-- Article IV - No Vote Buying - No Member shall offer nor accept anything of value in exchange for a vote of any type, nor shall any Member unduly influence the vote of another.
+Authority Nodes: Users who have created new blocks in Papyrus Network.
 
-- Article V - No Fiduciary - No Member nor PPR token holder shall have fiduciary responsibility to support the value of the PPR token. The Members do not authorize anyone to hold assets, borrow, nor contract on behalf of PPR token holders collectively. Papyrus Network blockchain has no owners, managers or fiduciaries.
+On-Chain: Any transaction, smart contract, or Ricardian contract which is located within a block that is irreversible and appended to the Papyrus Network.
 
-- Article VI - Restitution - Each Member agrees that penalties for breach of contract may include, but are not limited to, fines, loss of account, and other restitution.
+Papyrus Network-based Property: Anything that requires a valid permission in order to directly manipulate, alter, transfer, influence, or otherwise effect on the Papyrus Network
 
-- Article VII - Open Source - Each Member who makes available a smart contract on Papyrus Network blockchain shall be a Developer. Each Developer shall offer their smart contracts via a free and open source licenses, and each smart contract shall be documented with a Ricardian Contract stating the intent of all parties and naming the Arbitration body that will resolve disputes arising from that contract.
+Call: To submit an action to the Papyrus Network.
 
-- Article VIII - Language - Multilingual contracts must specify one prevailing language in case of dispute and the author of any translation shall be liable for losses due to their false, misleading, or ambiguous attested translations.
+Authorizations & Permissions: Permissions are arbitrary names used to define the requirements for a transaction sent on behalf of that permission. Permissions can be assigned for authority over specific contract actions.
 
-- Article IX - Dispute Resolution - All disputes arising out of or in connection with this Constitution shall be finally settled under the Rules of Arbitration of the International Chamber of Commerce by one or more arbitrators appointed in accordance with the said Rules.
+Article I -  User Acknowledgement of Risks
+If User loses access to their Papyrus Network address on chain_id and has not taken appropriate measures to secure access to their Papyrus Network address by other means, the User acknowledges and agrees that that Papyrus Network address will become inaccessible. Users acknowledge that the User has an adequate understanding of the risks, usage and intricacies of cryptographic tokens and blockchain-based software. The User acknowledges and agrees that the User is using the Papyrus Network at their sole risk.
 
-- Article X - Choice of Law - Choice of law for disputes shall be, in order of precedence, this Constitution and the Maxims of Equity.
+Article II - Consent of the PNUA
+The nature of the Papyrus Network User Agreement is such that it serves as a description of the current Papyrus Network Mainnet governance functions that are in place. These functions, enforced by code, do not require the consent of Users as these functions are inherent and systemic to the Papyrus Network Mainnet itself.
 
-- Article XI - Amending - This Constitution and its subordinate documents can be amended by a general vote of the token holders with no less than 15% vote participation among tokens and no fewer than 10% more Yes than No votes, sustained for 15 continuous days within a 60 day period.
+Article III - Governing Documents
+Current version of PNUA is referred by its SHA256 hash in Papyrus Network BIOS Contract and modifications to the PNUA may be made using BIOS Contract.
 
-- Article XII - Publishing - Members may only publish information to the Blockchain that is within their right to publish. Furthermore, Members voluntarily consent for all Members to permanently and irrevocably retain a copy, analyze, and distribute all broadcast transactions and derivative information.
+Article IV - Native Unit of Value
+The native unit of value on Papyrus Network chain_id shall be the PPR token as defined by Papyrus Network software.
 
-- Article XIII - Informed Consent - All service providers who produce tools to facilitate the construction and signing of transactions on behalf of other Members shall present to said other Members the full Ricardian contract terms of this Constitution and other referenced contracts. Service providers shall be liable for losses resulting from failure to disclose the full Ricardian contract terms to users.
+Article V - Maintaining the Papyrus Network 
+Papyrus Network code is published in open GitHub repositories and open source developers community is supposed to maintain the active blockchain codebase which includes, but is not limited to, the implementation of all modifications of all features, optimizations, and upgrades: present and future.
 
-- Article XIV - Severability - If any part of this Constitution is declared unenforceable or invalid, the remainder will continue to be valid and enforceable.
+Article VI - No Fiduciary
+No User shall have a fiduciary purpose to support the value of the PPR token. No User can authorize anyone to hold assets, borrow, speak, contract on behalf of other Papyrus Network Users or the Papyrus Network chain_id collectively. Papyrus Network shall have no owners, managers, or fiduciaries.
 
-- Article XV - Termination of Agreement - A Member is automatically released from all revocable obligations under this Constitution 10 years after the last transaction signed by that Member is incorporated into the blockchain. After 10 years of inactivity an account may be put up for auction and the proceeds distributed to all Members according to the system contract provisions then in effect for such redistribution.
+Article VII - User Security
+All items pertaining to personal account security, including but not limited to the safekeeping of private keys, is solely the responsibility of the User to secure.
 
-- Article XVI - Developer Liability - Members agree to hold software developers harmless for unintentional mistakes made in the expression of contractual intent, whether or not said mistakes were due to actual or perceived negligence.
-
-- Article XVII - Consideration - All rights and obligations under this Constitution are mutual and reciprocal and of equally significant value and cost to all parties.
-
-- Article XVIII - Acceptance - A contract is deemed accepted when a member signs a transaction and said transaction is incorporated into the blockchain according to the protocol.
-
-- Article XIX - Counterparts - This Constitution may be executed in any number of counterparts, each of which when executed and delivered shall constitute a duplicate original, but all counterparts together shall constitute a single agreement.
-
-- Article XX - Protocol - Members agree to use the protocol of communication and Papyrus Network maintenance, selected and implemented by Authority Nodes. Initial Authority Nodes represent those organizations and individuals, which decided to become first Members of the Papyrus Network and to launch the Network by implementing agreed network communication protocol. After the network is launched, Authority Nodes are able to add and remove Authority Nodes according to agreed protocol rules. As a general rule, approval of majority of Authority Nodes is required to change protocol rules, except for the rules listed in article XXI.
-
-- Article XXI - Amending the protocol - Members agree to hold special decision making process for specific actions.
+Article VIII - Authority Nodes Limited Liability
+The User acknowledges and agrees that, to the fullest extent permitted by any applicable law, this disclaimer of liability applies to any and all damages or injury whatsoever caused by or related to risks of, use of, or inability to use, the PPR token or the Papyrus Network under any cause of action whatsoever of any kind in any jurisdiction, including, without limitation, actions for breach of warranty, breach of contract or tort (including negligence) and that Authority Nodes shall not be liable for any indirect, incidental, special, exemplary or consequential damages, including for loss of profits, goodwill or data.
 
 Adding new Authority Node
 -------------------------
