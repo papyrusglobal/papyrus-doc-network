@@ -14,12 +14,15 @@ There are 1 000 000 000 PPR tokens distributed at the genesis block, and accordi
 
 Mining rewards are subject to change only based on community voting (see Governance documentation).
 
-Initially Papyrus Network mainnet is launched with 5 Authority Nodes chosen by Papyrus. 
-Papyrus audits each current and potential node owner entity's mission, executive leadership, net annual revenue, number of full-time employees, years in business, organizational structure, and the industry they are a part of. 
+Initially Papyrus Network mainnet is launched with 5 Authority Nodes chosen by Papyrus, few of them will be initially operated by Papyrus. 
 
 After the launch Authority Nodes election procedures are activated, network governance becomes decentralised and existing Authority Nodes are able to elect new Authority Nodes. 
+To make proper decisions as Authority Node owner Papyrus will audit each current and potential node owner entity's mission, executive leadership, net annual revenue, number of full-time employees, years in business, organizational structure, and the industry they are a part of, to ensure that existing network Authority Nodes are reliable enough.
 
-It is strongly recommended in the interest of network reliability that existing Authority Nodes do a regular audit of current and potential Authority Node owner entity's mission, executive leadership, net annual revenue, number of full-time employees, years in business, organizational structure, and the industry they are a part of.
+Following network launch Papyrus team will be pursuing full network decentralisation, where all Authority Nodes will be operated by other organisations without Papyrus involvement.  
+To achieve that Papyrus will be removing own nodes from the network, when new Authority Nodes are joining it. 
+
+It is strongly recommended in the interest of network reliability that all existing Authority Nodes do a regular audit of current and potential Authority Node owner entity's mission, executive leadership, net annual revenue, number of full-time employees, years in business, organizational structure, and the industry they are a part of.
 In case of doubt in other Authority Node reliability, Authority Nodes should use BIOS Contract to set a vote on adding suspicious Nodes to the Blacklist. 
 Papyrus Wallet and Papyrus Explorer support necessary functionality. 
 
