@@ -17,8 +17,6 @@ Chain ID: 32328
 
 BIOS Contract: An Papyrus Network smart contract with a dynamic permissions structure, which defines network governance procedures.
 
-BIOS Contract Address: 0xEd72cEd9C8515596b7D7503869E011e8617f48aF
-
 User: Any person or organization of persons who maintain(s) direct or indirect ownership of an Papyrus Network address, or property connected to an Papyrus Network address.
 
 Ownership: Direct or indirect access to an Papyrus Network address through one or more valid permissions checks. Ownership may be partially shared between Users through the use of multi-signature permissions.
