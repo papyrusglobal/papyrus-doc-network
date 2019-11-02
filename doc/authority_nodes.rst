@@ -52,12 +52,14 @@ You need have Docker and Docker Compose installed.
 To start a node, run the following docker command. It will download the image and start it. Optionally, you may add keys such as --rpc or --ws (see the ‘geth’ command line options) to the end of the command.
 
 .. code-block:: javascript
+
   docker run -d --name=my-node -p 33309:33309 -p 33309:33309/udp -v my-node-volume:/root/.ethereum --restart unless-stopped papyrusglobal/geth-papyrus:latest --port 33309 --ethstats='my-node-public-name:ante litteram@status-server.papyrus.network:3800'
 
 Additionally, if you are authority node:
 You will then need to copy your <account.json> to the container where node runs.
 
 .. code-block:: javascript
+
   docker cp account.json my-node:/root/.ethereum/keystore/
   docker exec -it my-node ./console.sh 'personal.unlockAccount(eth.accounts[0], "<<<passphrase>>>", 0)'
   docker exec -it my-node ./console.sh 'miner.setEtherbase(eth.accounts[0]); miner.start()'
