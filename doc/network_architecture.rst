@@ -75,10 +75,15 @@ After Authority Node candidate is proposed, voting for the Authority Node candid
 
 Any Authority Nodes is able to vote for other Authority Nodes and Authority Node candidates. 
 The following contraints are applied in network BIOS contract:
+
 - Authority Node have maximum of 7 votes to be casted for different Authority Nodes
+
 - Authority Node can't cast more than 1 vote for the same Node
+
 - Authority Node can cast one vote for itself
+
 - Authority Node can withdraw a vote from any node with immediate effect
+
 - Withdrawed votes can be casted again only after 14 days vote cooldown period
 
 After 14 days of voting for a new candidate Authority Node, decision is made based on received votes.
@@ -87,9 +92,13 @@ If by the end of voting period candidate received minimum of 3 votes from Author
 *Additional rule to be implemented by upgrading BIOS contract in the near time:* 
 
 If by the end of voting period candidate fits with ALL of the following:
+
 - received minimum of 3 votes from Authority Nodes
+
 - is not added to the blacklist (see below)
+
 - current number of Authorty Nodes < 47 OR there is an Authority Node, which have less received votes than candidate node
+
 Than candidate is promoted to Authority Node. 
 If number of Authority Nodes = 47, than simulatneously existing Authority Node with lowest amount of received votes is excluded from Authority Nodes. 
 This logic ensures that maximum number of Authority Nodes is limited with 47. 
@@ -109,7 +118,9 @@ Only Authority Nodes can cast votes in the blacklist voting.
 Each Authority Node can cast 1 vote for the proposal.
 
 After 5 days of blacklist proposal voting, proposal is deemed successful, if: 
+
 - amount of votes for proposal is > 50% of Authority Nodes count 
+
 Otherwise, proposal is rejected. 
 
 If proposal is successful, Authority Node or Authority Node candidate is added to the blacklist.
