@@ -62,61 +62,104 @@ Any Authority Node can make proposal on adding new Authority Node to the network
 Any Authority Node can vote for proposed Authority Node candidate, if it is not blacklisted in either authority nodes blacklist or stakeholders blacklist. In total each Authority Node can vote for a maximum of 7 other Authority Nodes or candidates. Authority Node can move their votes from one Node to another at any time. 
 Candidate Node becomes Authority Node if it keeps minimum 3 votes and holds in the top 47 Candidate and Authority Nodes by received votes number for continuous 7 days. Only votes from Authority Nodes are counted.    
 
-Removal of Authority Node
--------------------------
-Authority Node or candidate Node is removed and added to the authority nodes blacklist if other Authority Node proposes blacklisting of the Node and:
+Authority Nodes Management
+--------------------------
 
-- a) quorum of >50% of Authority Nodes votes for the proposal keeps for 3 continuous days. 
-- b) at least 50% of Authority Nodes vote in favor of blacklisting the Node for the same 3 continuous days.
+1. Election
+-----------
 
-Blacklisted nodes cannot become Authority Nodes again until they are removed from the authority nodes blacklist. Removal from the authority nodes blacklist may be performed by using the same approval process as for adding to the authority nodes blacklist.
-Authority Node or candidate Node is removed and added to the stakeholders blacklist if token stakeholder propose blacklisting of the Node and: 
+New Authority Nodes are elected by existing Authority Nodes. 
 
-- a) quorum of >10% of staked token votes for the proposal keeps for 3 continuous days
-- b) at least 50% of token votes are in favor of blacklisting the Node for the same 3 continuous days.
+Authority Node candidate can be proposed by any of existing Authority Nodes.
+After Authority Node candidate is proposed, voting for the Authority Node candidate begins and last 14 days.
 
-Blacklisted nodes cannot become Authority Nodes again until they are removed from the stakeholders blacklist. Removal from the stakeholders blacklist may be performed by using the same approval process as for adding to the stakeholders blacklist.
-Authority Node is removed if
+Any Authority Nodes is able to vote for other Authority Nodes and Authority Node candidates. 
+The following contraints are applied in network BIOS contract:
+- Authority Node have maximum of 7 votes to be casted for different Authority Nodes
+- Authority Node can't cast more than 1 vote for the same Node
+- Authority Node can cast one vote for itself
+- Authority Node can withdraw a vote from any node with immediate effect
+- Withdrawed votes can be casted again only after 14 days vote cooldown period
 
-- a) current amount of Authority nodes is 47
-- b) new Authority Node is being added
-- c) the Node had the lowest average amount of votes for past 7 days period among Authority Nodes, where only votes from other Authority Nodes are counted.
+After 14 days of voting for a new candidate Authority Node, decision is made based on received votes.
+If by the end of voting period candidate received minimum of 3 votes from Authority Nodes AND is not added to the blacklist (see below), than candidate becomes Authority Node. 
 
-Changing the maximum number of allowed Authority Nodes
+*Additional rule to be implemented by upgrading BIOS contract in the near time:* 
+
+If by the end of voting period candidate fits with ALL of the following:
+- received minimum of 3 votes from Authority Nodes
+- is not added to the blacklist (see below)
+- current number of Authorty Nodes < 47 OR there is an Authority Node, which have less received votes than candidate node
+Than candidate is promoted to Authority Node. 
+If number of Authority Nodes = 47, than simulatneously existing Authority Node with lowest amount of received votes is excluded from Authority Nodes. 
+This logic ensures that maximum number of Authority Nodes is limited with 47. 
+
+***
+
+Otherwise, candidate node is rejected and not promoted to Authority Node.
+
+2. Blacklist
+------------
+
+Authority Node and candidate for Authority Node can be blacklisted by existing Authority Nodes. 
+
+To add candidate or Authority Node to the blacklist, any Authority Node can create blacklist proposal and initiate proposal voting.
+Voting period for blacklist proposal is 5 days, which enables ability of blacklisting for Authority Node candidates before candidate voting period of 14 days ends. 
+Only Authority Nodes can cast votes in the blacklist voting.
+Each Authority Node can cast 1 vote for the proposal.
+
+After 5 days of blacklist proposal voting, proposal is deemed successful, if: 
+- amount of votes for proposal is > 50% of Authority Nodes count 
+Otherwise, proposal is rejected. 
+
+If proposal is successful, Authority Node or Authority Node candidate is added to the blacklist.
+Any node inlcuded into the blacklist can't be Authority Node. 
+
+*Community blacklist to be implemented by upgrading BIOS contract in the near time:* 
+
+Authority Node and candidate for Authority Node can be blacklisted by owners of PPR token stakes. 
+Blacklist formed based on PPR token stake holders voting is called community blacklist. 
+
+To add candidate or Authority Node to the blacklist, any owner of PPR token stake can create community blacklist proposal and initiate proposal voting by staking minimum amount of PPR tokens towards the proposal (minimum is to be determined). 
+
+Voting period for community blacklist proposal is 5 days, which enables ability of blacklisting for Authority Node candidates before candidate voting period of 14 days ends. 
+Only owners of PPR token stakes can cast votes in the community blacklist voting.
+Each owner of PPR token stake can cast vote proportional to their token stake.
+In case of voting for blacklist proposal stake withdrawal period for stake owner is increased to 5 days starting at the time of voting, so he can never vote twice in the same voting using the same stake. 
+Each vote for community blacklist can be either positive (for) or negative (against). 
+
+After 5 days of blacklist proposal voting, proposal is deemed successful, if: 
+- amount of positive votes is bigger, than amount of negative votes
+- total amount of votes is > 10% of total token stake owner votes possible in the network based on existing network-wide amount of token stakes (quorum)
+
+If proposal is successful, Authority Node or Authority Node candidate is added to the community blacklist.
+Any node inlcuded into the community blacklist can't be Authority Node. 
+
+***
+
+Changing BIOS contract parameters
 ------------------------------------------------------
-Initial number of allowed Authority Nodes is 47. This number is used as parameter in the process of decision making for adding new Authority Node or removal of existing Authority Node. Token stakeholder can propose amending this number and it will be amended if
 
-- a) quorum of >10% of staked token votes for the proposal keeps for 7 continuous days within 30 days period
-- b) no fewer than 10% more Yes than No votes sustain for the same 7 continuous days within 30 days period. 
+BIOS contract refers to Papyrus Network User Agreement using its SHA-256 hash code, linking network operations with the agreement.
 
-Changing token rewards for Authority Nodes. 
-Token reward rules for Authority Nodes are defined within the protocol implemented at the launch of Papyrus Network. Token stakeholder can propose amending these rules and they will be amended if
+Parameters such as maximum amount of Authority Nodes or mining rewards are configured in BIOS contract as well.
 
-- a) quorum of >10% of staked token votes for the proposal keeps for 7 continuous days within 30 days period
-- b) no fewer than 10% more Yes than No votes sustain for the same 7 continuous days within 30 days period. 
+Upon network launch Papyrus have ownership rights on BIOS contract and can override / reconfigure it in case of network issues. In the future Papyrus will surrender ownership of BIOS contract so that no party will be controlling it. 
 
-Authority Nodes approval recommendation
----------------------------------------
- 
-It is recommended that Authority Node vote for other Authority Node approval only if it verified the following. 
-Node is owned by specific registered business identity. Proof of ownership is provided in a form of information disclosure on the authorized website of business identity. For example, Node network address may be published on the website of business identity. Ownership of the website shall be verified as well using internet domain registry or other means. 
-Owner of the node have proven good reputation in the business society. 
-Node is compliant with technical requirements 
-It is also recommended that Authority Node make a proposal and vote for proposal to blacklist other Authority Nodes or candidates as soon as it gets information that the Node violates recommended requirements.
+To achieve decentralised governance, BIOS contract may be upgraded by supermajority decision of Authority Nodes, which is not objected by voting of the community of token stake owners. 
+
+Implementation of this voting will be deployed to BIOS contract in the near time. 
  
 Authority Nodes token reward recommendation
 -------------------------------------------
  
 To incentivize Authority Nodes participation, they shall receive token rewards for each block, which they include in the blockchain. With 1 seconds block interval it is recommended to set block reward at 1.5*K PPR tokens per block, where *K = {AMOUNT OF AUTHORITY NODES}/47*. It will keep annual inflation of PPR token supply under 5% for the network with 47 Authority Nodes, and it will avoid Authority Node reward dilution due to new nodes joining the network. As rewards aren’t diluted, Authority Nodes will be incentivized to propose new nodes inclusion to increase trust and adoption of the network, influencing token value. 
-As network usage grow token holders may amend block reward amount by facilitation decision process, established by the Constitution.
 
-Attack considerations
----------------------
+Governance attack considerations
+--------------------------------
 
 Network governance and resistance to attacks is considered sufficient, assuming that >50% of Authority Nodes are controlled by honest owners at all times.  
 When amount of Authority Nodes in the network is between 5 and 47, three or more nodes can collude to include more their allies as nodes into the network with the idea of eventually getting control over 50%+ Authority Nodes and performing network attack. Assuming that honest Nodes represent at least 50% of the Authority Nodes at the moment of attack preparation suspicion, they shall blacklist proposed node candidates to tolerate potential attack.
-In case if network attack such as double spending under very unlikely situation, when attackers mange to get control of more than 50% of Authority Nodes, token stakeholders together with honest Nodes can make hard fork of the blockchain and use media resources to distribute information and updates on proper version of the network to network customers. 
+In case of very unlikely situation, where network attack such as double spending is made by attackers, which manged to get control over more than 50% of Authority Nodes, token stake owners together with honest Authority Nodes can make hard fork of the blockchain and use media to distribute incident information and guides on necessary updates for network customers. 
 
-Node requirements
------------------
-An Authority Node must be located on a server or virtual private server (VPS) running Linux with a fixed IP address. Servers should not be exposed to anything critical or high-risk vulnerabilities.
+
