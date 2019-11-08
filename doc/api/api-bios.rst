@@ -10,10 +10,7 @@ Latest version of the Bios contact you can always  `find in our repo <https://gi
 BIOS Addresses
 --------------
 
-To track the current address of the Bios contract, there is a
-[Versioner](Versioner.sol) contract located at fixed address
-`0x0000000000000000000000000000000000000022`. To query it for the Bios contract
-address, use `bios` public method. Here is an example in javascript:
+To track the current address of the Bios contract, there is a `Versioner <https://github.com/papyrusglobal/papyrus/blob/master/papyrus-stuff/contracts/Versioner.sol>`_ contract located at fixed address :code:`0x0000000000000000000000000000000000000022`. To query it for the Bios contract address, use `bios` public method. Here is an example in javascript:
 
 .. code-block:: javascript
 
@@ -32,8 +29,7 @@ address, use `bios` public method. Here is an example in javascript:
     const versioner = new web3.eth.Contract(versionerAbi, versionerAddress);
     const biosAddress = await versioner.methods.bios().call({ from: account });
 
-Note that the resulting address may be zero, this means that the Bios contract
-is not yet installed.
+Note that the resulting address may be zero, this means that the Bios contract is not yet installed.
 
 BIOS Usages examples
 --------------------
