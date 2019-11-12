@@ -11,7 +11,7 @@ Papyrus Network further development directions:
 
 4. Support for dApp developers. 
 
-5. R&D: Native enthropy beacon.
+5. R&D: native enthropy beacon.
 
 6. R&D: blockchain history pruning via state snapshots and epochs to reduce data storage requirements for blockchain nodes.
 
