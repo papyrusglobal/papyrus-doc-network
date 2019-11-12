@@ -3,9 +3,9 @@ Papyrus Network key facts
 
 This section presents key variables of Papyrus Network setup, which dApp developers need to know. 
 
-ChainId = 32328
+* ChainId = 32328
 
-Block interval = 1s
+* Block interval = 1s
 
 Native token for resource allocation = PPR
 
@@ -41,6 +41,9 @@ BIOS contract versioner address = 0x0000000000000000000000000000000000000022
 
 Actual version of BIOS contract: 
 https://github.com/papyrusglobal/papyrus/blob/master/papyrus-stuff/contracts/Bios.sol
+
+Current BIOS contract address (do not hardcode it in your applications, use versioner to resolve BIOS address in all cases!):
+0x196facabb6512c8343ffa8bca4c0174d7b301ff9
 
 Actual version of Papyrus Network User Agreement: 
 https://github.com/papyrusglobal/papyrus/blob/master/PNUA
