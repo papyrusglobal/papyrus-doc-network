@@ -1,12 +1,18 @@
 Work in progress
 ================
 
-Papyrus Network further development ideas:
+Papyrus Network further development directions:
 
-1. Secure native enthropy beacon.
+1. Implementation of Community blacklist voting.
 
-2. Data storage management mechanisms. Light Authority Nodes, which keep only blockchain data for latest epoch. 
+2. Implementation of 47 Authority Nodes limit and governance improvements. 
 
-3. Sub-second blocks creation. 
+3. Research on Ethereum wallets compatibility and usability.
 
-4. Network governance and Authority Node election improvements. 
+4. Support for dApp developers. 
+
+5. R&D: Native enthropy beacon.
+
+6. R&D: blockchain history pruning via state snapshots and epochs to reduce data storage requirements for blockchain nodes.
+
+7. R&D: performance optimisations. 
