@@ -13,6 +13,7 @@ This section presents key variables of Papyrus Network setup, which dApp develop
 
 * Mining rewards = (1.5 * A) / 47 PPR per mined block, where A equals to the count of Authority Nodes
 
+------------------------
 
 * Block gas limit = 210284448
 
@@ -22,6 +23,7 @@ This section presents key variables of Papyrus Network setup, which dApp develop
 
 * Hourly gas allocation for an address for X PPR stake = X in wei * blockGasLimit * 60 * 60 / (totalStake in wei + X in wei), where blockGasLimit = block gas limit, totalStake = total amount of PPRs staked before new stake (X) happened
 
+------------------------
 
 * New Authority Node voting period = 14 days
 
@@ -45,6 +47,8 @@ https://github.com/papyrusglobal/papyrus/blob/master/papyrus-stuff/contracts/Bio
 https://github.com/papyrusglobal/papyrus/blob/master/PNUA
 
 * SHA-256 hash of Papyrus Network User Agreement verifiable in network BIOS contract: 0x5c366dc1ffa995d93fae49888f1283d5e8429a372757f43af315a79e84cd1583
+
+------------------------
 
 * Network explorer provided by Papyrus:
 
