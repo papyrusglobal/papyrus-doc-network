@@ -19,10 +19,11 @@ Block gas limit = 210284448
 Unstaking lock period = 3 * 24 hours
 
 Maximum gas allocation allowed for an address for X PPR stake = 3 * 24 * X in wei * blockGasLimit * 60 * 60 / (totalStake 
-in wei + X in wei)
+in wei + X in wei), 
+where blockGasLimit = block gas limit, totalStake = total amount of PPRs staked before new stake (X) happened
 
 Hourly gas allocation for an address for X PPR stake = X in wei * blockGasLimit * 60 * 60 / (totalStake in wei + X in wei), 
-where blockGasLimit = block gas limit, totalStake = current total amount of PPRs staked
+where blockGasLimit = block gas limit, totalStake = total amount of PPRs staked before new stake (X) happened
 
 
 New Authority Node voting period = 14 days
