@@ -37,6 +37,7 @@ Major advantages of Papyrus Network are:
    doc/papyrus_api
    doc/tools
    doc/faq
+   doc/key_facts
    doc/work_in_progress
 
 
