@@ -18,12 +18,9 @@ This section presents key variables of Papyrus Network setup, which dApp develop
 
 * Unstaking lock period = 3 * 24 hours
 
-* Maximum gas allocation allowed for an address for X PPR stake = 3 * 24 * X in wei * blockGasLimit * 60 * 60 / (totalStake 
-in wei + X in wei), 
-where blockGasLimit = block gas limit, totalStake = total amount of PPRs staked before new stake (X) happened
+* Maximum gas allocation allowed for an address for X PPR stake = 3 * 24 * X in wei * blockGasLimit * 60 * 60 / (totalStake in wei + X in wei), where blockGasLimit = block gas limit, totalStake = total amount of PPRs staked before new stake (X) happened
 
-* Hourly gas allocation for an address for X PPR stake = X in wei * blockGasLimit * 60 * 60 / (totalStake in wei + X in wei), 
-where blockGasLimit = block gas limit, totalStake = total amount of PPRs staked before new stake (X) happened
+* Hourly gas allocation for an address for X PPR stake = X in wei * blockGasLimit * 60 * 60 / (totalStake in wei + X in wei), where blockGasLimit = block gas limit, totalStake = total amount of PPRs staked before new stake (X) happened
 
 
 * New Authority Node voting period = 14 days
@@ -36,23 +33,18 @@ where blockGasLimit = block gas limit, totalStake = total amount of PPRs staked 
 
 * Vote withdrawal lock period = 14 days
 
-* BIOS contract versioner address = 0x0000000000000000000000000000000000000022
-(see http://docs.papyrus.network/en/latest/doc/api/api-bios.html)
+* BIOS contract versioner address: 0x0000000000000000000000000000000000000022 (see http://docs.papyrus.network/en/latest/doc/api/api-bios.html)
 
 * Actual version of BIOS contract: 
 https://github.com/papyrusglobal/papyrus/blob/master/papyrus-stuff/contracts/Bios.sol
 
-* Current BIOS contract address (do not hardcode it in your applications, use versioner to resolve BIOS address in all cases!):
-
-0x196facabb6512c8343ffa8bca4c0174d7b301ff9
+* Current BIOS contract address (do not hardcode it in your applications, use versioner to resolve BIOS address in all cases!): 0x196facabb6512c8343ffa8bca4c0174d7b301ff9
 
 * Actual version of Papyrus Network User Agreement: 
 
 https://github.com/papyrusglobal/papyrus/blob/master/PNUA
 
-* SHA-256 hash of Papyrus Network User Agreement verifiable in network BIOS contract:
-
-0x5c366dc1ffa995d93fae49888f1283d5e8429a372757f43af315a79e84cd1583
+* SHA-256 hash of Papyrus Network User Agreement verifiable in network BIOS contract: 0x5c366dc1ffa995d93fae49888f1283d5e8429a372757f43af315a79e84cd1583
 
 * Network explorer provided by Papyrus:
 
