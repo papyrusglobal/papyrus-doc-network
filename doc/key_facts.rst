@@ -19,8 +19,7 @@ This section presents key variables of Papyrus Network setup, which dApp develop
 
 * Unstaking lock period = 3 * 24 hours (3 days)
 
-* Gas refill allocation for an address with X PPR stake = X in wei * blockGasLimit * 60 * 60 / totalStake in wei, where blockGasLimit = block gas limit, totalStake = total amount of PPRs staked in the network with X included
-(implementation notice: for the first stake created for the address gas is allocated immediately, for subsequent stakes gas is allocated once in an hour by gas refill process)
+* Gas refill allocation for an address with X PPR stake = X in wei * blockGasLimit * 60 * 60 / totalStake in wei, where blockGasLimit = block gas limit, totalStake = total amount of PPRs staked in the network with X included (implementation notice: for the first stake created for the address gas is allocated immediately, for subsequent stakes gas is allocated once in an hour by gas refill process)
 
 * Gas refill interval = 60 * 60 seconds (1 hour)
 
