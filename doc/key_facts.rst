@@ -5,7 +5,7 @@ This section presents key variables of Papyrus Network setup, which dApp develop
 
 * ChainId = 32328
 
-* Block interval = 1s
+* Block interval = 1 second
 
 * Native token for resource allocation = PPR
 
@@ -17,11 +17,14 @@ This section presents key variables of Papyrus Network setup, which dApp develop
 
 * Block gas limit = 210284448
 
-* Unstaking lock period = 3 * 24 hours
+* Unstaking lock period = 3 * 24 hours (3 days)
 
-* Maximum gas allocation allowed for an address for X PPR stake = 3 * 24 * X in wei * blockGasLimit * 60 * 60 / (totalStake in wei + X in wei), where blockGasLimit = block gas limit, totalStake = total amount of PPRs staked before new stake (X) happened
+* Gas refill allocation for an address with X PPR stake = X in wei * blockGasLimit * 60 * 60 / totalStake in wei, where blockGasLimit = block gas limit, totalStake = total amount of PPRs staked in the network with X included
+(implementation notice: for the first stake created for the address gas is allocated immediately, for subsequent stakes gas is allocated once in an hour by gas refill process)
 
-* Hourly gas allocation for an address for X PPR stake = X in wei * blockGasLimit * 60 * 60 / (totalStake in wei + X in wei), where blockGasLimit = block gas limit, totalStake = total amount of PPRs staked before new stake (X) happened
+* Gas refill interval = 60 * 60 seconds (1 hour)
+
+* Maximum gas allocation limit for an address with X PPR stake = 3 * 24 * X in wei * blockGasLimit * 60 * 60 / totalStake in wei, where blockGasLimit = block gas limit, totalStake = total amount of PPRs staked in the network with X included
 
 ------------------------
 
