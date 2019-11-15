@@ -3,7 +3,7 @@ Staking
 
 **Why we implemented token staking in Papyrus Network?**
 
-Token staking is the method to allocate network bandwidth to specific user or application developer needs. We use idea of toknisation to manage network resources and avoid network flood and sybil attacks on the network. 
+Token staking is the method to allocate network bandwidth to specific user or application developer needs. We use idea of tokenisation to manage network resources and avoid network flood and sybil attacks on the network. 
 
 There is a fixed amount of network bandwidth tokens issued at every point in time (every block formed in the network). 
 Imagine that to get right to use X% of network bandwidth you have to freeze X% of issued tokens, making them unavailable to transfers and any other usage. You can always unfreeze them by requesting that, but you will have to wait 3 days and will lose ability to use X% of network bandwidth. That is the simple illustration, how network bandwidth may be tokenised with fixed amount of tokens. 
