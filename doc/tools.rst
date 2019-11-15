@@ -38,7 +38,6 @@ Frontend repository - https://github.com/papyrusglobal/papyrus-token-bridge-web
 
 **5. Papyrus Roulette dApp demo**
 
-MainNet - https://roulette.papyrus.network
 
 TestNet - https://roulette-testnet.papyrus.network/ 
 
