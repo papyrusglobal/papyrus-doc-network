@@ -24,7 +24,7 @@ sphinxcontrib-websupport==1.0.1
 typing==3.6.4
 urllib3==1.24.2
 pdfrw==0.4
-Pillow==5.1.0
+Pillow==8.1.1
 pyparsing==2.2.0
 reportlab==3.4.0
 rst2pdf==0.93
