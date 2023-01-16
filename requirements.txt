@@ -12,7 +12,7 @@ m2r==0.1.14
 MarkupSafe==1.0
 packaging==17.1
 mistune==0.8.3
-Pygments==2.3.1
+Pygments==2.7.4
 pytz==2017.3
 requests==2.20.0
 six==1.11.0
